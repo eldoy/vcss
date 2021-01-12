@@ -6,7 +6,7 @@
     "clear:dist": "rm -rf dist",
     "clear:docs": "rm -rf docs",
     "clear": "npm run clear:dist && npm run clear:docs",
-    "make": "node-sass -q src/vcss.scss -o dist",
+    "make": "node-sass -q scss/vcss.scss -o dist",
     "pretty": "prettier -w dist/vcss.css",
     "minify": "uglifycss dist/vcss.css > dist/vcss-min.css",
     "update": "cp dist/vcss.css docs/css/build",
@@ -14,8 +14,8 @@
     "build:app": "npm run clear && waveorb build && mv dist docs",
     "serve": "npm run clear:css && npm run build:css && concurrently -n 🔥,💗 \"npm run watch:app\" \"npm run watch:css\"",
     "watch:app": "WAVEORB_PORT=7000 nodemon -e js,mjs,json,yml,css,md -i dist -x waveorb serve",
-    "watch:css": "node-sass -w -q src/vcss.scss -o app/assets/css/build/",
-    "build:css": "node-sass -q src/vcss.scss -o app/assets/css/build/",
+    "watch:css": "node-sass -w -q scss/vcss.scss -o app/assets/css/build/",
+    "build:css": "node-sass -q scss/vcss.scss -o app/assets/css/build/",
     "clear:css": "rm -rf app/assets/css/build"
   },
   "repository": {
