@@ -35,7 +35,5 @@
     "tomarkup": "^0.1.1",
     "uglifycss": "0.0.29"
   },
-  "dependencies": {
-    "sanitize.css": "^12.0.1"
-  }
+  "dependencies": {}
 }
