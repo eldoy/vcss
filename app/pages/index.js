@@ -4,57 +4,55 @@ module.exports = async function($) {
   $.page.title = 'VCSS'
 
   return /* html */`
-    <header id="top">
-      <h1>HTML5 Test Page</h1>
-      <p>This is a test page filled with common HTML elements to be used to provide visual feedback whilst building CSS systems and frameworks.</p>
-    </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="#text">Text</a>
-          <ul>
-            <li><a href="#text__headings">Headings</a></li>
-            <li><a href="#text__paragraphs">Paragraphs</a></li>
-            <li><a href="#text__blockquotes">Blockquotes</a></li>
-            <li><a href="#text__lists">Lists</a></li>
-            <li><a href="#text__hr">Horizontal rules</a></li>
-            <li><a href="#text__tables">Tabular data</a></li>
-            <li><a href="#text__code">Code</a></li>
-            <li><a href="#text__inline">Inline elements</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#embedded">Embedded content</a>
-          <ul>
-            <li><a href="#embedded__images">Images</a></li>
-            <li><a href="#embedded__audio">Audio</a></li>
-            <li><a href="#embedded__video">Video</a></li>
-            <li><a href="#embedded__canvas">Canvas</a></li>
-            <li><a href="#embedded__meter">Meter</a></li>
-            <li><a href="#embedded__progress">Progress</a></li>
-            <li><a href="#embedded__svg">Inline SVG</a></li>
-            <li><a href="#embedded__iframe">IFrames</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#forms">Form elements</a>
-          <ul>
-            <li><a href="#forms__input">Input fields</a></li>
-            <li><a href="#forms__select">Select menus</a></li>
-            <li><a href="#forms__checkbox">Checkboxes</a></li>
-            <li><a href="#forms__radio">Radio buttons</a></li>
-            <li><a href="#forms__textareas">Textareas</a></li>
-            <li><a href="#forms__html5">HTML5 inputs</a></li>
-            <li><a href="#forms__action">Action buttons</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
     <main>
+      <header id="top">
+        <h1>VCSS</h1>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="#text">Text</a>
+            <ul>
+              <li><a href="#text__headings">Headings</a></li>
+              <li><a href="#text__paragraphs">Paragraphs</a></li>
+              <li><a href="#text__blockquotes">Blockquotes</a></li>
+              <li><a href="#text__lists">Lists</a></li>
+              <li><a href="#text__hr">Horizontal rules</a></li>
+              <li><a href="#text__tables">Tabular data</a></li>
+              <li><a href="#text__code">Code</a></li>
+              <li><a href="#text__inline">Inline elements</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#embedded">Embedded content</a>
+            <ul>
+              <li><a href="#embedded__images">Images</a></li>
+              <li><a href="#embedded__audio">Audio</a></li>
+              <li><a href="#embedded__video">Video</a></li>
+              <li><a href="#embedded__canvas">Canvas</a></li>
+              <li><a href="#embedded__meter">Meter</a></li>
+              <li><a href="#embedded__progress">Progress</a></li>
+              <li><a href="#embedded__svg">Inline SVG</a></li>
+              <li><a href="#embedded__iframe">IFrames</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#forms">Form elements</a>
+            <ul>
+              <li><a href="#forms__input">Input fields</a></li>
+              <li><a href="#forms__select">Select menus</a></li>
+              <li><a href="#forms__checkbox">Checkboxes</a></li>
+              <li><a href="#forms__radio">Radio buttons</a></li>
+              <li><a href="#forms__textareas">Textareas</a></li>
+              <li><a href="#forms__html5">HTML5 inputs</a></li>
+              <li><a href="#forms__action">Action buttons</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
       <section id="text">
-        <header><h2>Text</h2></header>
+        <h2>Headings</h2>
         <article id="text__headings">
-          <header><h3>Headings</h3></header>
           <div>
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
@@ -66,14 +64,14 @@ module.exports = async function($) {
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="text__paragraphs">
-          <header><h2>Paragraphs</h2></header>
+          <h2>Paragraphs</h2>
           <div>
             <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
           </div>
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="text__blockquotes">
-          <header><h2>Blockquotes</h2></header>
+          <h2>Blockquotes</h2>
           <div>
             <blockquote>
               <p>A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text.</p>
@@ -84,7 +82,7 @@ module.exports = async function($) {
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="text__lists">
-          <header><h2>Lists</h2></header>
+          <h2>Lists</h2>
           <div>
             <h3>Definition list</h3>
             <dl>
@@ -107,14 +105,14 @@ module.exports = async function($) {
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="text__hr">
-          <header><h2>Horizontal rules</h2></header>
+          <h2>Horizontal rules</h2>
           <div>
             <hr>
           </div>
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="text__tables">
-          <header><h2>Tabular data</h2></header>
+          <h2>Tabular data</h2>
           <table>
             <caption>Table Caption</caption>
             <thead>
@@ -169,7 +167,7 @@ module.exports = async function($) {
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="text__code">
-          <header><h2>Code</h2></header>
+          <h2>Code</h2>
           <div>
             <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
             <p><strong>Inline code:</strong> <code>&lt;div&gt;code&lt;/div&gt;</code></p>
@@ -186,7 +184,7 @@ module.exports = async function($) {
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="text__inline">
-          <header><h2>Inline elements</h2></header>
+          <h2>Inline elements</h2>
           <div>
             <p><a href="#!">This is a text link</a>.</p>
             <p><strong>Strong is used to indicate strong importance.</strong></p>
@@ -212,9 +210,9 @@ module.exports = async function($) {
       </section>
 
       <section id="embedded">
-        <header><h2>Embedded content</h2></header>
+        <h2>Embedded content</h2>
         <article id="embedded__images">
-          <header><h2>Images</h2></header>
+          <h2>Images</h2>
           <div>
             <h3>No <code>&lt;figure&gt;</code> element</h3>
             <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
@@ -229,43 +227,43 @@ module.exports = async function($) {
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="embedded__audio">
-          <header><h2>Audio</h2></header>
+          <h2>Audio</h2>
           <div><audio controls="">audio</audio></div>
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="embedded__video">
-          <header><h2>Video</h2></header>
+          <h2>Video</h2>
           <div><video controls="">video</video></div>
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="embedded__canvas">
-          <header><h2>Canvas</h2></header>
+          <h2>Canvas</h2>
           <div><canvas>canvas</canvas></div>
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="embedded__meter">
-          <header><h2>Meter</h2></header>
+          <h2>Meter</h2>
           <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="embedded__progress">
-          <header><h2>Progress</h2></header>
+          <h2>Progress</h2>
           <div><progress>progress</progress></div>
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="embedded__svg">
-          <header><h2>Inline SVG</h2></header>
+          <h2>Inline SVG</h2>
           <div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
         <article id="embedded__iframe">
-          <header><h2>IFrame</h2></header>
+          <h2>IFrame</h2>
           <div><iframe src="index.html" height="300"></iframe></div>
           <div><p><a href="#top">[Top]</a></p></div>
         </article>
       </section>
       <section id="forms">
-        <header><h2>Form elements</h2></header>
+        <h2>Form elements</h2>
         <form>
           <fieldset id="forms__input">
             <legend>Input fields</legend>
