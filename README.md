@@ -7,6 +7,8 @@ Based on [Marx](https://mblode.github.io/marx/) and [sanitize](https://csstools.
 * Support for CSS variables in addition to sass variables
 * Some extra tweaks and bug fixes
 
+[Check out the demo](https://eldoy.github.io/vcss/)
+
 ### Usage
 
 If you're using plain CSS you can just include the `dist/vcss-min.css` file.
