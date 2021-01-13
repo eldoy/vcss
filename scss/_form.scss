@@ -13,39 +13,39 @@ input[type="search"],
 input[type="tel"],
 select,
 textarea {
-  background: var(--white, $white);
+  background: $white;
   background-clip: padding-box;
-  border: var(--border, $border);
-  border-radius: var(--br, $br);
-  color: var(--text, $text);
+  border: $border;
+  border-radius: $br;
+  color: $text;
   display: block;
   width: 100%;
   font-size: 1rem;
-  padding: var(--sm-pad, $sm-pad) var(--md-pad, $md-pad);
+  padding: $sm-pad $md-pad;
   line-height: 1.5;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  font-family: var(--sans-serif, $sans-serif);
+  font-family: $sans-serif;
   word-break: normal;
 }
 
 input[type="color"] {
-  background: var(--white, $white);
-  border: var(--border, $border);
-  border-radius: var(--br, $br);
+  background: $white;
+  border: $border;
+  border-radius: $br;
   display: inline-block;
   vertical-align: middle;
 }
 
 input:not([type]) {
   -webkit-appearance: none;
-  background: var(--white, $white);
+  background: $white;
   background-clip: padding-box;
-  border: var(--border, $border);
-  border-radius: var(--br, $br);
-  color: var(--text, $text);
+  border: $border;
+  border-radius: $br;
+  color: $text;
   display: block;
   width: 100%;
-  padding: var(--sm-pad, $sm-pad) var(--md-pad, $md-pad);
+  padding: $sm-pad $md-pad;
   line-height: 1.5;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   text-align: left;
@@ -69,22 +69,22 @@ input[type="color"]:focus,
 select:focus,
 textarea:focus {
   background-color: #fff;
-  border-color: var(--input-focus-border-color, $input-focus-border-color);
+  border-color: $input-focus-border-color;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--input-focus-shadow-color, $input-focus-shadow-color);
+  box-shadow: 0 0 0 0.2rem $input-focus-shadow-color;
 }
 
 input:not([type]):focus {
   background-color: #fff;
-  border-color: var(--input-focus-border-color, $input-focus-border-color);
+  border-color: $input-focus-border-color;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem var(--input-focus-shadow-color, $input-focus-shadow-color);
+  box-shadow: 0 0 0 0.2rem $input-focus-shadow-color;
 }
 
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 1px thin var(--dividers, $dividers);
+  outline: 1px thin $dividers;
 }
 
 input[type="text"][disabled],
@@ -103,15 +103,15 @@ input[type="tel"][disabled],
 input[type="color"][disabled],
 select[disabled],
 textarea[disabled] {
-  background-color: var(--dividers, $dividers);
-  color: var(--secondary, $secondary);
+  background-color: $dividers;
+  color: $secondary;
   cursor: not-allowed;
   opacity: 1;
 }
 
 input:not([type])[disabled] {
-  background-color: var(--dividers, $dividers);
-  color: var(--secondary, $secondary);
+  background-color: $dividers;
+  color: $secondary;
   cursor: not-allowed;
   opacity: 1;
 }
@@ -119,25 +119,25 @@ input:not([type])[disabled] {
 input[readonly],
 select[readonly],
 textarea[readonly] {
-  border-color: var(--dividers, $dividers);
-  color: var(--secondary, $secondary);
+  border-color: $dividers;
+  color: $secondary;
 }
 
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
-  border-color: var(--select-focus-border-color, $select-focus-border-color);
-  color: var(--red, $red);
+  border-color: $select-focus-border-color;
+  color: $red;
 }
 
 input[type="file"]:focus:invalid:focus,
 input[type="radio"]:focus:invalid:focus,
 input[type="checkbox"]:focus:invalid:focus {
-  outline-color: var(--red, $red);
+  outline-color: $red;
 }
 
 select {
-  border: var(--border, $border);
+  border: $border;
   vertical-align: sub;
 }
 
@@ -157,15 +157,15 @@ label {
 fieldset {
   border: 0;
   margin: 0;
-  padding: var(--sm-pad, $sm-pad) 0;
+  padding: $sm-pad 0;
 }
 
 legend {
-  border-bottom: var(--border, $border);
-  color: var(--text, $text);
+  border-bottom: $border;
+  color: $text;
   display: block;
-  margin-bottom: var(--sm-pad, $sm-pad);
-  padding: var(--sm-pad, $sm-pad) 0;
+  margin-bottom: $sm-pad;
+  padding: $sm-pad 0;
   width: 100%;
 }
 
