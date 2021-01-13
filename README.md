@@ -19,7 +19,7 @@ npm i vcss.css
 ```
 
 and then include in app with:
-```sass
+```scss
 @import '../node_modules/vcss.css/scss/vcss.scss`
 ```
 
@@ -27,7 +27,7 @@ and then include in app with:
 
 Here's the list of available variables at the moment (as found in `scss/_variables.scss`):
 
-```sass
+```scss
 //Basic stylings
 $br: 4px !default;
 $xs-pad: 4px !default;
