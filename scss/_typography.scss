@@ -1,13 +1,13 @@
 body {
-  color: $text;
-  font-family: $font-family;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
+  color: var(--text, $text);
+  font-family: var(--font-family, $font-family);
+  font-size: var(--font-size-base, $font-size-base);
+  line-height: var(--line-height-base, $line-height-base);
 }
 
 p {
   margin: 0;
-  margin-bottom: $md-pad;
+  margin-bottom: var(--md-pad, $md-pad);
 }
 
 h1,
@@ -23,56 +23,56 @@ h6 {
 }
 
 h1 {
-  font-size: $font-size-h1;
-  margin: $lg-pad 0 $md-pad;
+  font-size: var(--font-size-h1, $font-size-h1);
+  margin: var(--lg-pad, $lg-pad) 0 var(--md-pad, $md-pad);
 }
 
 h2 {
-  font-size: $font-size-h2;
-  margin: $lg-pad 0 $md-pad;
+  font-size: var(--font-size-h2, $font-size-h2);
+  margin: var(--lg-pad, $lg-pad) 0 var(--md-pad, $md-pad);
 }
 
 h3 {
-  font-size: $font-size-h3;
-  margin: $md-pad 0 $xs-pad;
+  font-size: var(--font-size-h3, $font-size-h3);
+  margin: var(--md-pad, $md-pad) 0 var(--xs-pad, $xs-pad);
 }
 
 h4 {
-  font-size: $font-size-h4;
-  margin: $md-pad 0 $xs-pad;
+  font-size: var(--font-size-h4, $font-size-h4);
+  margin: var(--md-pad, $md-pad) 0 var(--xs-pad, $xs-pad);
 }
 
 h5 {
-  font-size: $font-size-h5;
-  margin: $md-pad 0 $xs-pad;
+  font-size: var(--font-size-h5, $font-size-h5);
+  margin: var(--md-pad, $md-pad) 0 var(--xs-pad, $xs-pad);
 }
 
 h6 {
-  font-size: $font-size-h6;
-  margin: $md-pad 0 $xs-pad;
+  font-size: var(--font-size-h6, $font-size-h6);
+  margin: var(--md-pad, $md-pad) 0 var(--xs-pad, $xs-pad);
 }
 
 small {
-  color: $secondary;
+  color: var(--secondary, $secondary);
   vertical-align: bottom;
 }
 
 pre {
-  background: $grey;
-  color: $text;
+  background: var(--grey, $grey);
+  color: var(--text, $text);
   display: block;
-  font-family: $monospace;
-  font-size: $font-size-base;
-  margin: $md-pad 0;
-  padding: $md-pad;
+  font-family: var(--monospace, $monospace);
+  font-size: var(--font-size-base, $font-size-base);
+  margin: var(--md-pad, $md-pad) 0;
+  padding: var(--md-pad, $md-pad);
   white-space: pre-wrap;
   overflow-wrap: break-word;
 }
 
 code {
-  color: $text;
-  font-family: $monospace;
-  font-size: $font-size-base;
+  color: var(--text, $text);
+  font-family: var(--monospace, $monospace);
+  font-size: var(--font-size-base, $font-size-base);
   line-height: inherit;
   margin: 0;
   padding: 0;
@@ -82,42 +82,42 @@ code {
 }
 
 a {
-  color: $link-color;
+  color: var(--link-color, $link-color);
   text-decoration: none;
   background-color: transparent;
 
   &:hover,
   &:focus {
-    color: $link-hover-color;
+    color: var(--link-hover-color, $link-hover-color);
     text-decoration: underline;
   }
 }
 
 dl {
-  margin-bottom: $md-pad;
+  margin-bottom: var(--md-pad, $md-pad);
 }
 
 dd {
-  margin-left: $xlg-pad;
+  margin-left: var(--xlg-pad, $xlg-pad);
 }
 
 ul,
 ol {
-  margin-bottom: $sm-pad;
-  padding-left: $xlg-pad;
+  margin-bottom: var(--sm-pad, $sm-pad);
+  padding-left: var(--xlg-pad, $xlg-pad);
   vertical-align: baseline;
 }
 
 blockquote {
-  border-left: 2px solid $text;
-  font-family: $serif;
+  border-left: 2px solid var(--text, $text);
+  font-family: var(--serif, $serif);
   font-style: italic;
-  margin: $md-pad 0;
-  padding-left: $md-pad;
+  margin: var(--md-pad, $md-pad) 0;
+  padding-left: var(--md-pad, $md-pad);
 }
 
 figcaption {
-  font-family: $serif;
+  font-family: var(--serif, $serif);
 }
 
 u {
@@ -129,15 +129,15 @@ s {
 }
 
 sup {
-  font-size: $font-size-small;
+  font-size: var(--font-size-small, $font-size-small);
   vertical-align: super;
 }
 
 sub {
-  font-size: $font-size-small;
+  font-size: var(--font-size-small, $font-size-small);
   vertical-align: sub;
 }
 
 mark {
-  background: $yellow;
+  background: var(--yellow, $yellow);
 }

@@ -1,26 +1,26 @@
 table {
-  border-top: $border;
-  margin-bottom: $md-pad;
+  border-top: var(--border, $border);
+  margin-bottom: var(--md-pad, $md-pad);
 }
 
 caption {
-  padding: $sm-pad 0;
+  padding: var(--sm-pad, $sm-pad) 0;
 }
 
 thead th {
   border: 0;
-  border-bottom: 2px solid $dividers;
+  border-bottom: 2px solid var(--dividers, $dividers);
   text-align: left;
 }
 
 tr {
-  margin-bottom: $sm-pad;
+  margin-bottom: var(--sm-pad, $sm-pad);
 }
 
 th,
 td {
-  border-bottom: $border;
-  padding: $md-pad;
+  border-bottom: var(--border, $border);
+  padding: var(--md-pad, $md-pad);
   vertical-align: inherit;
 }
 
@@ -29,8 +29,8 @@ tfoot tr {
 }
 
 tfoot td {
-  color: $secondary;
-  font-size: $sm-pad;
+  color: var(--secondary, $secondary);
+  font-size: var(--sm-pad, $sm-pad);
   font-style: italic;
-  padding: $md-pad $xs-pad;
+  padding: var(--md-pad, $md-pad) var(--xs-pad, $xs-pad);
 }
