@@ -1,3 +1,7 @@
+/* This script will automatically convert scss
+  variables to css variables using scss variables
+  as default.
+*/
 const fs = require('fs')
 const path = require('path')
 
