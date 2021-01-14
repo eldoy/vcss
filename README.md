@@ -4,8 +4,8 @@ Semantic and minimal CSS library, only about 3Kb gzipped and minified.
 
 Based on [Marx](https://mblode.github.io/marx/) and [sanitize](https://csstools.github.io/sanitize.css/) but with extras:
 
-* Support for CSS variables in addition to sass variables
-* Some extra tweaks and bug fixes
+* Optional components
+* Tweaks and bug fixes
 
 [Check out the demo](https://eldoy.github.io/vcss/)
 
@@ -59,18 +59,6 @@ $dividers: rgba(0, 0, 0, 0.12) !default;
 //Links
 $link-color: $primary !default;
 $link-hover-color: darken($link-color, 15%) !default;
-
-//Buttons
-$button-hover-background-color: darken($primary, 7.5%) !default;
-$button-hover-border-color: darken($primary, 10%) !default;
-$button-active-background-color: darken($primary, 10%) !default;
-$button-active-border-color: darken($primary, 12.5%) !default;
-$button-focus-shadow-color: fade_out($primary, 0.5) !default;
-
-//Form
-$select-focus-border-color: darken($red, 10) !default;
-$input-focus-shadow-color: fade_out($primary, 0.75) !default;
-$input-focus-border-color: mix($primary, #fff) !default;
 
 //Font
 $sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !default;
