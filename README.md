@@ -6,7 +6,7 @@ Based on [Marx](https://mblode.github.io/marx/) and [sanitize](https://csstools.
 
 * Different defaults
 * Many more SCSS variables
-* Optional components
+* Extra components and utilities
 * Tweaks and bug fixes
 
 [Check out the demo](https://eldoy.github.io/vcss/)
