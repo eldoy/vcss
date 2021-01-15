@@ -54,7 +54,8 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+#card-element {
   background-color: $input-focus-background-color;
   border-color: $input-focus-border-color;
   outline: $input-focus-outline;
