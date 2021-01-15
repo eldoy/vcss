@@ -1,9 +1,15 @@
+* #card-element as input
+* .button for links as buttons
+
+
 # VCSS
 
 Semantic and minimal CSS library, only about 3Kb gzipped and minified.
 
 Based on [Marx](https://mblode.github.io/marx/) and [sanitize](https://csstools.github.io/sanitize.css/) but with extras:
 
+* Different defaults
+* More variables
 * Optional components
 * Tweaks and bug fixes
 

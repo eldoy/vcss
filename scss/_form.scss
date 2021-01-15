@@ -52,6 +52,7 @@ input:not([type]) {
   word-break: normal;
 }
 
+input:not([type]):focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -68,25 +69,19 @@ input[type="tel"]:focus,
 input[type="color"]:focus,
 select:focus,
 textarea:focus {
-  background-color: #fff;
-  border-color: mix($primary, #fff);
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem fade_out($primary, 0.75);
-}
-
-input:not([type]):focus {
-  background-color: #fff;
-  border-color: mix($primary, #fff);
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem fade_out($primary, 0.75);
+  background-color: $input-focus-background-color;
+  border-color: $input-focus-border-color;
+  outline: $input-focus-outline;
+  box-shadow: $input-focus-shadow;
 }
 
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 1px thin $dividers;
+  outline: $input-outline;
 }
 
+input:not([type])[disabled],
 input[type="text"][disabled],
 input[type="password"][disabled],
 input[type="email"][disabled],
@@ -103,15 +98,8 @@ input[type="tel"][disabled],
 input[type="color"][disabled],
 select[disabled],
 textarea[disabled] {
-  background-color: $dividers;
-  color: $secondary;
-  cursor: not-allowed;
-  opacity: 1;
-}
-
-input:not([type])[disabled] {
-  background-color: $dividers;
-  color: $secondary;
+  background-color: $input-disabled-background-color;
+  color: $input-disabled-color;
   cursor: not-allowed;
   opacity: 1;
 }
@@ -119,21 +107,21 @@ input:not([type])[disabled] {
 input[readonly],
 select[readonly],
 textarea[readonly] {
-  border-color: $dividers;
-  color: $secondary;
+  background-color: $input-readonly-background-color;
+  color: $input-readonly-color;
 }
 
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
-  border-color: darken($red, 10);
-  color: $red;
+  background-color: $input-invalid-background-color;
+  color: $input-invalid-color;
 }
 
 input[type="file"]:focus:invalid:focus,
 input[type="radio"]:focus:invalid:focus,
 input[type="checkbox"]:focus:invalid:focus {
-  outline-color: $red;
+  outline-color: $input-focus-invalid-outline-color;
 }
 
 select {
