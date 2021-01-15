@@ -1,6 +1,6 @@
-* #card-element as input
 * .button for links as buttons
-
+* button colors
+* $divider
 
 # VCSS
 
@@ -60,7 +60,7 @@ $black: #000 !default;
 $text: rgba(0, 0, 0, 0.8) !default;
 $secondary: rgba(0, 0, 0, 0.54) !default;
 $disabled: rgba(0, 0, 0, 0.38) !default;
-$dividers: rgba(0, 0, 0, 0.12) !default;
+$divider: rgba(0, 0, 0, 0.12) !default;
 
 //Links
 $link-color: $primary !default;
@@ -84,7 +84,7 @@ $font-size-h6: 16px !default;
 $line-height-base: 1.5 !default;
 
 //Other
-$border: 1px solid $dividers !default;
+$border: 1px solid $divider !default;
 ```
 
 MIT licensed. Enjoy!

@@ -26,7 +26,7 @@ $blue: #007bff !default;
 $text: rgba(0, 0, 0, 0.8) !default;
 $secondary: rgba(0, 0, 0, 0.54) !default;
 $disabled: rgba(0, 0, 0, 0.38) !default;
-$dividers: rgba(0, 0, 0, 0.12) !default;
+$divider: rgba(0, 0, 0, 0.12) !default;
 
 //Links
 $link-color: $blue !default;
@@ -38,10 +38,10 @@ $input-focus-background-color: #fff !default;
 $input-focus-border-color: mix($primary, #fff) !default;
 $input-focus-outline: 0 !default;
 $input-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.75) !default;
-$input-outline: 1px thin $dividers !default;
-$input-disabled-background-color: $dividers !default;
+$input-outline: 1px thin $divider !default;
+$input-disabled-background-color: $divider !default;
 $input-disabled-color: $secondary !default;
-$input-readonly-border-color: $dividers !default;
+$input-readonly-border-color: $divider !default;
 $input-readonly-color: $secondary !default;
 $input-invalid-border-color: darken($red, 10) !default;
 $input-invalid-color: $red !default;
@@ -65,4 +65,4 @@ $font-size-h6: 16px !default;
 $line-height-base: 1.5 !default;
 
 //Other
-$border: 1px solid $dividers !default;
+$border: 1px solid $divider !default;
