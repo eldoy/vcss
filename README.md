@@ -1,7 +1,3 @@
-* .button for links as buttons
-* button colors
-* $divider
-
 # VCSS
 
 Semantic and minimal CSS library, only about 3Kb gzipped and minified.
