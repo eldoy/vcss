@@ -1,6 +1,6 @@
 {
   "name": "vcss.css",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Minimal and semantic CSS library",
   "scripts": {
     "clear:dist": "rm -rf dist",
