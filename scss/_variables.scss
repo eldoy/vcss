@@ -40,15 +40,15 @@ $button-padding: $sm-pad $md-pad !default;
 $button-border: 1px solid transparent !default;
 $button-font-size: 1rem !default;
 $button-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
-$button-hover-color: darken($primary, 7.5%) !default;
+$button-hover-background-color: darken($primary, 7.5%) !default;
 $button-hover-border-color: darken($primary, 10%) !default;
 $button-hover-color: $white !default;
-$button-active-color: darken($primary, 10%) !default;
+$button-active-background-color: darken($primary, 10%) !default;
 $button-active-border-color: darken($primary, 12.5%) !default;
 $button-active-color: $white !default;
 $button-focus-outline: 0 !default;
 $button-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.5) !default;
-$button-disabled-color: $primary !default;
+$button-disabled-background-color: $primary !default;
 $button-disabled-border-color: $primary !default;
 $button-disabled-color: $white !default;
 

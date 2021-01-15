@@ -23,7 +23,7 @@
  * 1. Use the default cursor in all browsers (opinionated).
  * 2. Change the line height in all browsers (opinionated).
  * 3. Use a 4-space tab width in all browsers (opinionated).
- * 4. Remove the grey highlight on links in iOS (opinionated).
+ * 4. Remove the gray highlight on links in iOS (opinionated).
  * 5. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  * 6. Breaks words to prevent overflow in all browsers (opinionated).
@@ -514,11 +514,11 @@ summary {
 main {
   display: block;
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 960px;
   padding: 0 16px 16px; }
 
 footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid #ded8c7;
   padding: 16px 0;
   text-align: center; }
   footer p {
@@ -526,7 +526,7 @@ footer {
 
 hr {
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid #ded8c7;
   display: block;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -556,7 +556,7 @@ video {
   border: 0; }
 
 body {
-  color: rgba(0, 0, 0, 0.8);
+  color: #302e2b;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.5; }
@@ -601,12 +601,12 @@ h6 {
   margin: 16px 0 4px; }
 
 small {
-  color: rgba(0, 0, 0, 0.54);
+  color: #706d64;
   vertical-align: bottom; }
 
 pre {
   background: #f7f7f9;
-  color: rgba(0, 0, 0, 0.8);
+  color: #302e2b;
   display: block;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 16px;
@@ -616,7 +616,7 @@ pre {
   overflow-wrap: break-word; }
 
 code {
-  color: rgba(0, 0, 0, 0.8);
+  color: #302e2b;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 16px;
   line-height: inherit;
@@ -631,7 +631,7 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover, a:focus {
-    color: #0062cc;
+    color: #0056b3;
     text-decoration: underline; }
 
 dl {
@@ -647,7 +647,7 @@ ol {
   vertical-align: baseline; }
 
 blockquote {
-  border-left: 2px solid rgba(0, 0, 0, 0.8);
+  border-left: 2px solid #302e2b;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   margin: 16px 0;
@@ -673,6 +673,7 @@ sub {
 mark {
   background: #ffeb3b; }
 
+input:not([type]),
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -687,12 +688,13 @@ input[type="number"],
 input[type="search"],
 input[type="tel"],
 select,
-textarea {
+textarea
+#card-element {
   background: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid #ded8c7;
   border-radius: 4px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #302e2b;
   display: block;
   width: 100%;
   font-size: 1rem;
@@ -704,26 +706,12 @@ textarea {
 
 input[type="color"] {
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid #ded8c7;
   border-radius: 4px;
   display: inline-block;
   vertical-align: middle; }
 
-input:not([type]) {
-  -webkit-appearance: none;
-  background: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: rgba(0, 0, 0, 0.8);
-  display: block;
-  width: 100%;
-  padding: 8px 16px;
-  line-height: 1.5;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  text-align: left;
-  word-break: normal; }
-
+input:not([type]):focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -739,23 +727,19 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+#card-element {
   background-color: #fff;
-  border-color: #80bdff;
+  border-color: #8dc0c0;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-
-input:not([type]):focus {
-  background-color: #fff;
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+  box-shadow: 0 0 0 0.2rem rgba(27, 128, 128, 0.25); }
 
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 1px thin rgba(0, 0, 0, 0.12); }
+  outline: 1px thin #ded8c7; }
 
+input:not([type])[disabled],
 input[type="text"][disabled],
 input[type="password"][disabled],
 input[type="email"][disabled],
@@ -772,22 +756,16 @@ input[type="tel"][disabled],
 input[type="color"][disabled],
 select[disabled],
 textarea[disabled] {
-  background-color: rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.54);
-  cursor: not-allowed;
-  opacity: 1; }
-
-input:not([type])[disabled] {
-  background-color: rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.54);
+  background-color: #ded8c7;
+  color: #706d64;
   cursor: not-allowed;
   opacity: 1; }
 
 input[readonly],
 select[readonly],
 textarea[readonly] {
-  border-color: rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.54); }
+  border-color: #ded8c7;
+  color: #706d64; }
 
 input:focus:invalid,
 textarea:focus:invalid,
@@ -801,7 +779,7 @@ input[type="checkbox"]:focus:invalid:focus {
   outline-color: #f44336; }
 
 select {
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid #ded8c7;
   vertical-align: sub; }
 
 select:not([size]):not([multiple]) {
@@ -812,7 +790,8 @@ select[multiple] {
 
 label {
   display: inline-block;
-  line-height: 2; }
+  line-height: 2;
+  color: #565656; }
 
 fieldset {
   border: 0;
@@ -820,8 +799,8 @@ fieldset {
   padding: 8px 0; }
 
 legend {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #ded8c7;
+  color: #302e2b;
   display: block;
   margin-bottom: 8px;
   padding: 8px 0;
@@ -840,9 +819,9 @@ input[type=radio] {
 input[type=submit],
 input[type=reset],
 input[type=button],
-button {
-  background-color: #007bff;
-  border: #007bff;
+button,
+.button {
+  background-color: #1b8080;
   border-radius: 4px;
   color: #fff;
   padding: 8px 16px;
@@ -855,7 +834,7 @@ button {
   border: 1px solid transparent;
   font-size: 1rem;
   line-height: 1.5;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
 
 input[type=submit]::-moz-focus-inner,
 input[type=reset]::-moz-focus-inner,
@@ -866,38 +845,42 @@ button::-moz-focus-inner {
 input[type=submit]:hover,
 input[type=reset]:hover,
 input[type=button]:hover,
-button:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
+button:hover,
+.button:hover {
+  background-color: #146060;
+  border-color: #125656;
   color: #fff; }
 
 input[type=submit]:not(:disabled):active,
 input[type=reset]:not(:disabled):active,
 input[type=button]:not(:disabled):active,
-button:not(:disabled):active {
-  background-color: #0062cc;
-  border-color: #005cbf;
+button:not(:disabled):active,
+.button:active {
+  background-color: #125656;
+  border-color: #104b4b;
   color: #fff; }
 
 input[type=submit]:focus,
 input[type=reset]:focus,
 input[type=button]:focus,
-button:focus {
+button:focus,
+.button:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+  box-shadow: 0 0 0 0.2rem rgba(27, 128, 128, 0.5); }
 
 input[type=submit]:disabled,
 input[type=reset]:disabled,
 input[type=button]:disabled,
-button:disabled {
-  opacity: .65;
+button:disabled,
+.button.disabled {
+  opacity: 0.65;
   cursor: not-allowed;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #1b8080;
+  border-color: #1b8080;
   color: #fff; }
 
 table {
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid #ded8c7;
   margin-bottom: 16px; }
 
 caption {
@@ -905,7 +888,7 @@ caption {
 
 thead th {
   border: 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 2px solid #ded8c7;
   text-align: left; }
 
 tr {
@@ -913,7 +896,7 @@ tr {
 
 th,
 td {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-bottom: 1px solid #ded8c7;
   padding: 16px;
   vertical-align: inherit; }
 
@@ -921,7 +904,7 @@ tfoot tr {
   text-align: left; }
 
 tfoot td {
-  color: rgba(0, 0, 0, 0.54);
+  color: #706d64;
   font-size: 8px;
   font-style: italic;
   padding: 16px 4px; }
