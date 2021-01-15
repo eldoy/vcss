@@ -1,4 +1,4 @@
-input:not([type]),
+input,
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -94,14 +94,14 @@ textarea[disabled] {
 input[readonly],
 select[readonly],
 textarea[readonly] {
-  background-color: $input-readonly-background-color;
+  border-color: $input-readonly-border-color;
   color: $input-readonly-color;
 }
 
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
-  background-color: $input-invalid-background-color;
+  border-color: $input-invalid-border-color;
   color: $input-invalid-color;
 }
 
@@ -127,6 +127,7 @@ select[multiple] {
 label {
   display: inline-block;
   line-height: 2;
+  color: $label-color;
 }
 
 fieldset {
