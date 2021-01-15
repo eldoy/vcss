@@ -31,13 +31,13 @@ Here's the list of available variables at the moment (as found in `scss/_variabl
 
 ```scss
 //Basic stylings
-$br: 4px !default;
+$border-radius: 4px !default;
 $xs-pad: 4px !default;
 $sm-pad: 8px !default;
 $md-pad: 16px !default;
 $lg-pad: 20px !default;
 $xlg-pad: 40px !default;
-$trans: 0.3s !default;
+$transition-time: 0.3s !default;
 
 //Breakpoints
 $small-breakpoint: 400px !default;

@@ -1,11 +1,11 @@
 //Basic stylings
-$br: 4px !default;
+$border-radius: 4px !default;
 $xs-pad: 4px !default;
 $sm-pad: 8px !default;
 $md-pad: 16px !default;
 $lg-pad: 20px !default;
 $xlg-pad: 40px !default;
-$trans: 0.3s !default;
+$transition-time: 0.3s !default;
 
 //Breakpoints
 $small-breakpoint: 400px !default;
@@ -34,7 +34,7 @@ $link-hover-color: darken($link-color, 15%) !default;
 
 //Buttons
 $button-background-color: $primary !default;
-$button-border-radius: $br !default;
+$button-border-radius: $border-radius !default;
 $button-color: $white !default;
 $button-padding: $sm-pad $md-pad !default;
 $button-border: 1px solid transparent !default;

@@ -18,7 +18,7 @@ textarea
   background: $white;
   background-clip: padding-box;
   border: $border;
-  border-radius: $br;
+  border-radius: $border-radius;
   color: $text;
   display: block;
   width: 100%;
@@ -33,7 +33,7 @@ textarea
 input[type="color"] {
   background: $white;
   border: $border;
-  border-radius: $br;
+  border-radius: $border-radius;
   display: inline-block;
   vertical-align: middle;
 }
