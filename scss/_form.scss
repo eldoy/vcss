@@ -92,8 +92,9 @@ select[multiple] {
 
 label {
   display: inline-block;
-  line-height: 2;
+  line-height: $label-line-height;
   color: $label-color;
+  font-size: $label-font-size;
 }
 
 fieldset {
