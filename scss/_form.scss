@@ -13,7 +13,8 @@ input[type="number"],
 input[type="search"],
 input[type="tel"],
 select,
-textarea
+textarea,
+trix-editor,
 #card-element {
   background: $white;
   background-clip: padding-box;
@@ -28,6 +29,18 @@ textarea
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   font-family: $sans-serif;
   word-break: normal;
+  &:focus {
+    background-color: $input-focus-background-color;
+    border-color: $input-focus-border-color;
+    outline: $input-focus-outline;
+    box-shadow: $input-focus-shadow;
+  }
+  &:disabled {
+    background-color: $input-disabled-background-color;
+    color: $input-disabled-color;
+    cursor: not-allowed;
+    opacity: 1;
+  }
 }
 
 input[type="color"] {
@@ -38,57 +51,10 @@ input[type="color"] {
   vertical-align: middle;
 }
 
-input:not([type]):focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-select:focus,
-textarea:focus,
-#card-element {
-  background-color: $input-focus-background-color;
-  border-color: $input-focus-border-color;
-  outline: $input-focus-outline;
-  box-shadow: $input-focus-shadow;
-}
-
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: $input-outline;
-}
-
-input:not([type])[disabled],
-input[type="text"][disabled],
-input[type="password"][disabled],
-input[type="email"][disabled],
-input[type="url"][disabled],
-input[type="date"][disabled],
-input[type="month"][disabled],
-input[type="time"][disabled],
-input[type="datetime"][disabled],
-input[type="datetime-local"][disabled],
-input[type="week"][disabled],
-input[type="number"][disabled],
-input[type="search"][disabled],
-input[type="tel"][disabled],
-input[type="color"][disabled],
-select[disabled],
-textarea[disabled] {
-  background-color: $input-disabled-background-color;
-  color: $input-disabled-color;
-  cursor: not-allowed;
-  opacity: 1;
 }
 
 input[readonly],
@@ -132,17 +98,14 @@ label {
 
 fieldset {
   border: 0;
+  padding: 0.01em 0 0 0;
   margin: 0;
-  padding: $sm-pad 0;
+  min-width: 0;
 }
 
 legend {
-  border-bottom: $border;
-  color: $text;
-  display: block;
-  margin-bottom: $sm-pad;
-  padding: $sm-pad 0;
-  width: 100%;
+  padding: 0;
+  display: table;
 }
 
 textarea {
