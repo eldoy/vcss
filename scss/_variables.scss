@@ -1,12 +1,12 @@
 // Colors
-$primary: #1b8080 !default;
-$red: #f44336 !default;
-$yellow: #ffeb3b !default;
-$gray: #f7f7f9 !default;
-$dark: #565656 !default;
 $white: #fff !default;
 $black: #000 !default;
-$blue: #00f !default;
+$link: #00f !default;
+$primary: #1b8080 !default;
+$danger: #f55 !default;
+$highlight: #ff5 !default;
+$gray: #f7f7f9 !default;
+$dark: #565656 !default;
 
 // Text
 $text: #302e2b !default;
@@ -29,7 +29,7 @@ $small-breakpoint: 400px !default;
 $large-breakpoint: 960px !default;
 
 // Links
-$link-color: $blue !default;
+$link-color: $link !default;
 $link-hover-color: darken($link-color, 15%) !default;
 
 // Buttons
@@ -65,9 +65,9 @@ $input-disabled-background-color: $divider !default;
 $input-disabled-color: $secondary !default;
 $input-readonly-border-color: $divider !default;
 $input-readonly-color: $secondary !default;
-$input-invalid-border-color: darken($red, 10) !default;
-$input-invalid-color: $red !default;
-$input-focus-invalid-outline-color: $red !default;
+$input-invalid-border-color: darken($danger, 10) !default;
+$input-invalid-color: $danger !default;
+$input-focus-invalid-outline-color: $danger !default;
 
 // Font
 $sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" !default;
