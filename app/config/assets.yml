@@ -1,9 +1,6 @@
 bundle:
   js:
-    - /js/haka-min.js
-    - /js/highlight.js
     - /js/app.js
   css:
     - /css/build/vcss.css
-    - /css/highlight.css
     - /css/app.css
