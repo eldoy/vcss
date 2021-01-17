@@ -1,0 +1,30 @@
+dl {
+  margin-bottom: $md-pad;
+}
+
+dd {
+  margin-left: $xlg-pad;
+}
+
+ul,
+ol {
+  margin-bottom: $sm-pad;
+  padding-left: $xlg-pad;
+  vertical-align: baseline;
+}
+
+caption {
+  padding: $sm-pad 0;
+}
+
+table {
+  margin-bottom: $md-pad;
+}
+
+th,
+td {
+  text-align: left;
+  padding: $md-pad;
+  vertical-align: inherit;
+  border: 0;
+}

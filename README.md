@@ -1,8 +1,8 @@
 # VCSS
 
-Semantic and minimal CSS library, only about 3Kb gzipped and minified.
+Semantic and minimal CSS library, only about 2.5Kb gzipped and minified.
 
-Based on [marx](https://mblode.github.io/marx/) and [sanitize](https://csstools.github.io/sanitize.css/) but with extras:
+Inspired by [marx](https://mblode.github.io/marx/) and [sanitize](https://csstools.github.io/sanitize.css/) but with extras:
 
 * Different defaults, more light weight
 * More SCSS variables and colors

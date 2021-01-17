@@ -86,21 +86,6 @@ a:not(.button) {
   }
 }
 
-dl {
-  margin-bottom: $md-pad;
-}
-
-dd {
-  margin-left: $xlg-pad;
-}
-
-ul,
-ol {
-  margin-bottom: $sm-pad;
-  padding-left: $xlg-pad;
-  vertical-align: baseline;
-}
-
 blockquote {
   border-left: 2px solid $medium;
   font-family: $serif;
