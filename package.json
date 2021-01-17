@@ -2,6 +2,8 @@
   "name": "vcss.css",
   "version": "0.2.3",
   "description": "Minimal and semantic CSS library",
+  "main": "scss/vcss.scss",
+  "style": "scss/vcss.scss",
   "scripts": {
     "clear:dist": "rm -rf dist",
     "clear:docs": "rm -rf docs",
