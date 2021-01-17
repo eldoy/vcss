@@ -1,8 +1,10 @@
-.errors {
-  color: red;
-  opacity: 1;
-  display: block;
-  transition: all 0.2s ease;
-  font-size: 90%;
-  height: 1rem;
+header#top {
+  display: flex;
+  align-items: baseline;
+}
+header#top h1 {
+  flex-grow: 1;
+}
+header#top a {
+  height: 25px;
 }
