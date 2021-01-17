@@ -139,28 +139,14 @@ module.exports = async function($) {
                 <td>Table Cell 4</td>
                 <td>Table Cell 5</td>
               </tr>
-              <tr>
-                <td>Table Cell 1</td>
-                <td>Table Cell 2</td>
-                <td>Table Cell 3</td>
-                <td>Table Cell 4</td>
-                <td>Table Cell 5</td>
-              </tr>
-              <tr>
-                <td>Table Cell 1</td>
-                <td>Table Cell 2</td>
-                <td>Table Cell 3</td>
-                <td>Table Cell 4</td>
-                <td>Table Cell 5</td>
-              </tr>
             </tbody>
             <tfoot>
               <tr>
-                <th>Table Footer 1</th>
-                <th>Table Footer 2</th>
-                <th>Table Footer 3</th>
-                <th>Table Footer 4</th>
-                <th>Table Footer 5</th>
+                <td>Table Footer 1</td>
+                <td>Table Footer 2</td>
+                <td>Table Footer 3</td>
+                <td>Table Footer 4</td>
+                <td>Table Footer 5</td>
               </tr>
             </tfoot>
           </table>
@@ -214,11 +200,11 @@ module.exports = async function($) {
         <article id="embedded__images">
           <h2>Images</h2>
           <div>
-            <h3>No <code>&lt;figure&gt;</code> element</h3>
+            <p>No <code>&lt;figure&gt;</code> element</p>
             <p><img src="http://placekitten.com/480/480" alt="Image alt text"></p>
-            <h3>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></h3>
+            <p>Wrapped in a <code>&lt;figure&gt;</code> element, no <code>&lt;figcaption&gt;</code></p>
             <figure><img src="http://placekitten.com/420/420" alt="Image alt text"></figure>
-            <h3>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></h3>
+            <p>Wrapped in a <code>&lt;figure&gt;</code> element, with a <code>&lt;figcaption&gt;</code></p>
             <figure>
               <img src="http://placekitten.com/420/420" alt="Image alt text">
               <figcaption>Here is a caption for this image.</figcaption>

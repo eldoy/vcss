@@ -1,21 +1,19 @@
 // Colors
+$text: #111 !default;
 $white: #fff !default;
 $black: #000 !default;
-$link: #00f !default;
-$primary: #1b8080 !default;
-$danger: #f55 !default;
-$highlight: #ff5 !default;
-$gray: #f7f7f9 !default;
+$gray: #ccc !default;
+$light: #f7f7f7 !default;
 $dark: #565656 !default;
-
-// Text
-$text: #302e2b !default;
-$secondary: #706d64 !default;
-$disabled: #9d988d !default;
-$divider: #ded8c7 !default;
+$link: #33f !default;
+$primary: #1b8080 !default;
+$highlight: #ff5 !default;
+$danger: #f55 !default;
+$line: #efefef !default;
+$disabled: #999 !default;
 
 // Basic stylings
-$border: 1px solid $divider !default;
+$border: 1px solid $line !default;
 $border-radius: 4px !default;
 $transition-time: 0.3s !default;
 $xs-pad: 4px !default;
@@ -60,11 +58,11 @@ $input-focus-background-color: #fff !default;
 $input-focus-border-color: mix($primary, #fff) !default;
 $input-focus-outline: 0 !default;
 $input-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.75) !default;
-$input-outline: 1px thin $divider !default;
-$input-disabled-background-color: $divider !default;
-$input-disabled-color: $secondary !default;
-$input-readonly-border-color: $divider !default;
-$input-readonly-color: $secondary !default;
+$input-outline: 1px thin $line !default;
+$input-disabled-background-color: $line !default;
+$input-disabled-color: $disabled !default;
+$input-readonly-border-color: $line !default;
+$input-readonly-color: $disabled !default;
 $input-invalid-border-color: darken($danger, 10) !default;
 $input-invalid-color: $danger !default;
 $input-focus-invalid-outline-color: $danger !default;
@@ -84,4 +82,4 @@ $font-size-h3: 28px !default;
 $font-size-h4: 24px !default;
 $font-size-h5: 20px !default;
 $font-size-h6: 16px !default;
-$line-height-base: 1.5 !default;
+$line-height-base: 1.6 !default;

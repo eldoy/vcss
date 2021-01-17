@@ -48,7 +48,7 @@ $primary: #1b8080 !default;
 $accent: #64ffda !default;
 $danger: #f44336 !default;
 $yellow: #ffeb3b !default;
-$gray: #f7f7f9 !default;
+$light: #f7f7f9 !default;
 $dark: #565656 !default;
 $white: #fff !default;
 $black: #000 !default;
@@ -58,7 +58,7 @@ $blue: #007bff !default;
 $text: #302e2b !default;
 $secondary: #706d64 !default;
 $disabled: #9d988d !default;
-$divider: #ded8c7 !default;
+$line: #ded8c7 !default;
 
 //Links
 $link-color: $blue !default;
@@ -90,10 +90,10 @@ $input-focus-background-color: #fff !default;
 $input-focus-border-color: mix($primary, #fff) !default;
 $input-focus-outline: 0 !default;
 $input-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.75) !default;
-$input-outline: 1px thin $divider !default;
-$input-disabled-background-color: $divider !default;
+$input-outline: 1px thin $line !default;
+$input-disabled-background-color: $line !default;
 $input-disabled-color: $secondary !default;
-$input-readonly-border-color: $divider !default;
+$input-readonly-border-color: $line !default;
 $input-readonly-color: $secondary !default;
 $input-invalid-border-color: darken($danger, 10) !default;
 $input-invalid-color: $danger !default;
@@ -117,7 +117,7 @@ $font-size-h6: 16px !default;
 $line-height-base: 1.5 !default;
 
 //Other
-$border: 1px solid $divider !default;
+$border: 1px solid $line !default;
 ```
 
 MIT licensed. Enjoy!

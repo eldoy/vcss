@@ -9,7 +9,7 @@ caption {
 
 thead th {
   border: 0;
-  border-bottom: 2px solid $divider;
+  border-bottom: $border;
   text-align: left;
 }
 
@@ -29,8 +29,6 @@ tfoot tr {
 }
 
 tfoot td {
-  color: $secondary;
-  font-size: $sm-pad;
   font-style: italic;
   padding: $md-pad $xs-pad;
 }
