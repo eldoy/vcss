@@ -19,10 +19,6 @@ h6 {
   font-family: inherit;
   line-height: 1.2;
   font-weight: 600;
-  small {
-    margin-left: $sm-pad;
-    color: $small;
-  }
 }
 
 h1 {
@@ -79,11 +75,10 @@ code {
   word-wrap: break-word;
 }
 
-a {
+a:not(.button) {
   color: $link-color;
   text-decoration: none;
   background-color: transparent;
-
   &:hover,
   &:focus {
     color: $link-hover-color;

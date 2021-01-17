@@ -376,8 +376,8 @@ module.exports = async function($) {
             </p>
           </fieldset>
           <p><a href="#top">[Top]</a></p>
-          <fieldset id="forms-action">
-            <legend>Action buttons</legend>
+          <fieldset>
+            <legend>Buttons</legend>
             <p>
               <input type="submit" value="<input type=submit>">
               <input type="button" value="<input type=button>">
@@ -389,6 +389,10 @@ module.exports = async function($) {
               <button type="button">&lt;button type=button&gt;</button>
               <button type="reset">&lt;button type=reset&gt;</button>
               <button type="button" disabled>&lt;button disabled&gt;</button>
+            </p>
+            <p>
+              <a class="button" href="">&lt;a class=button&gt;</a>
+              <a class="button disabled" href="">&lt;a class=button disabled&gt;</a>
             </p>
           </fieldset>
           <p><a href="#top">[Top]</a></p>

@@ -17,6 +17,7 @@ button,
   font-size: $button-font-size;
   line-height: 1.5;
   transition: $button-transition;
+  text-decoration: none;
 }
 
 input[type=submit]::-moz-focus-inner,
