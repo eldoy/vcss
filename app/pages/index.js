@@ -5,10 +5,10 @@ module.exports = async function($) {
 
   return /* html */`
     <main>
-      <header id="top" style="display:flex;align-items:baseline">
-        <h1 style="flex-grow:1">VCSS</h1>
+      <header id="top">
+        <h1>VCSS</h1>
         <a href="https://github.com/eldoy/vcss">
-          <img src="/img/gh.svg" style="height:25px">
+          <img src="img/gh.svg" style="height:25px">
         </a>
       </header>
       <p>
