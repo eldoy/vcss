@@ -13,64 +13,69 @@ module.exports = async function($) {
           <li>
             <a href="#text">Text</a>
             <ul>
-              <li><a href="#text__headings">Headings</a></li>
-              <li><a href="#text__paragraphs">Paragraphs</a></li>
-              <li><a href="#text__blockquotes">Blockquotes</a></li>
-              <li><a href="#text__lists">Lists</a></li>
-              <li><a href="#text__hr">Horizontal rules</a></li>
-              <li><a href="#text__tables">Tabular data</a></li>
-              <li><a href="#text__code">Code</a></li>
-              <li><a href="#text__inline">Inline elements</a></li>
+              <li><a href="#text-headings">Headings</a></li>
+              <li><a href="#text-paragraphs">Paragraphs</a></li>
+              <li><a href="#text-blockquotes">Blockquotes</a></li>
+              <li><a href="#text-lists">Lists</a></li>
+              <li><a href="#text-hr">Horizontal rules</a></li>
+              <li><a href="#text-tables">Tabular data</a></li>
+              <li><a href="#text-code">Code</a></li>
+              <li><a href="#text-inline">Inline elements</a></li>
             </ul>
           </li>
           <li>
             <a href="#embedded">Embedded content</a>
             <ul>
-              <li><a href="#embedded__images">Images</a></li>
-              <li><a href="#embedded__audio">Audio</a></li>
-              <li><a href="#embedded__video">Video</a></li>
-              <li><a href="#embedded__canvas">Canvas</a></li>
-              <li><a href="#embedded__meter">Meter</a></li>
-              <li><a href="#embedded__progress">Progress</a></li>
-              <li><a href="#embedded__svg">Inline SVG</a></li>
-              <li><a href="#embedded__iframe">IFrames</a></li>
+              <li><a href="#embedded-images">Images</a></li>
+              <li><a href="#embedded-audio">Audio</a></li>
+              <li><a href="#embedded-video">Video</a></li>
+              <li><a href="#embedded-canvas">Canvas</a></li>
+              <li><a href="#embedded-meter">Meter</a></li>
+              <li><a href="#embedded-progress">Progress</a></li>
+              <li><a href="#embedded-svg">Inline SVG</a></li>
+              <li><a href="#embedded-iframe">IFrames</a></li>
             </ul>
           </li>
           <li>
             <a href="#forms">Form elements</a>
             <ul>
-              <li><a href="#forms__input">Input fields</a></li>
-              <li><a href="#forms__select">Select menus</a></li>
-              <li><a href="#forms__checkbox">Checkboxes</a></li>
-              <li><a href="#forms__radio">Radio buttons</a></li>
-              <li><a href="#forms__textareas">Textareas</a></li>
-              <li><a href="#forms__html5">HTML5 inputs</a></li>
-              <li><a href="#forms__action">Action buttons</a></li>
+              <li><a href="#forms-input">Input fields</a></li>
+              <li><a href="#forms-select">Select menus</a></li>
+              <li><a href="#forms-checkbox">Checkboxes</a></li>
+              <li><a href="#forms-radio">Radio buttons</a></li>
+              <li><a href="#forms-textareas">Textareas</a></li>
+              <li><a href="#forms-html5">HTML5 inputs</a></li>
+              <li><a href="#forms-action">Action buttons</a></li>
             </ul>
           </li>
         </ul>
       </nav>
       <section id="text">
         <h2>Headings</h2>
-        <article id="text__headings">
-          <div>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-          </div>
-          <div><p><a href="#top">[Top]</a></p></div>
+        <article id="text-headings">
+          <h1>Heading 1<small>Hello</small></h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
+          <h2>Heading 2<small>Hello</small></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
+          <h3>Heading 3<small>Hello</small></h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
+          <h4>Heading 4<small>Hello</small></h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
+          <h5>Heading 5<small>Hello</small></h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
+          <h6>Heading 6<small>Hello</small></h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
+
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="text__paragraphs">
+        <article id="text-paragraphs">
           <h2>Paragraphs</h2>
           <div>
             <p>A paragraph (from the Greek paragraphos, “to write beside” or “written beside”) is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
           </div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="text__blockquotes">
+        <article id="text-blockquotes">
           <h2>Blockquotes</h2>
           <div>
             <blockquote>
@@ -79,9 +84,9 @@ module.exports = async function($) {
               <cite><a href="#!">Said no one, ever.</a></cite>
             </blockquote>
           </div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="text__lists">
+        <article id="text-lists">
           <h2>Lists</h2>
           <div>
             <h3>Definition list</h3>
@@ -102,16 +107,16 @@ module.exports = async function($) {
               <li>List Item 3</li>
             </ul>
           </div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="text__hr">
+        <article id="text-hr">
           <h2>Horizontal rules</h2>
           <div>
             <hr>
           </div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="text__tables">
+        <article id="text-tables">
           <h2>Tabular data</h2>
           <table>
             <caption>Table Caption</caption>
@@ -150,9 +155,9 @@ module.exports = async function($) {
               </tr>
             </tfoot>
           </table>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="text__code">
+        <article id="text-code">
           <h2>Code</h2>
           <div>
             <p><strong>Keyboard input:</strong> <kbd>Cmd</kbd></p>
@@ -167,9 +172,9 @@ module.exports = async function($) {
   \` a b c d e f g h i j k l m n o
   p q r s t u v w x y z { | } ~ </pre>
           </div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="text__inline">
+        <article id="text-inline">
           <h2>Inline elements</h2>
           <div>
             <p><a href="#!">This is a text link</a>.</p>
@@ -191,13 +196,13 @@ module.exports = async function($) {
             <p>The <var>variable element</var>, such as <var>x</var> = <var>y</var>.</p>
             <p>The time element: <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time></p>
           </div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
       </section>
 
       <section id="embedded">
         <h2>Embedded content</h2>
-        <article id="embedded__images">
+        <article id="embedded-images">
           <h2>Images</h2>
           <div>
             <p>No <code>&lt;figure&gt;</code> element</p>
@@ -210,88 +215,96 @@ module.exports = async function($) {
               <figcaption>Here is a caption for this image.</figcaption>
             </figure>
           </div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="embedded__audio">
+        <article id="embedded-audio">
           <h2>Audio</h2>
           <div><audio controls="">audio</audio></div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="embedded__video">
+        <article id="embedded-video">
           <h2>Video</h2>
           <div><video controls="">video</video></div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="embedded__canvas">
+        <article id="embedded-canvas">
           <h2>Canvas</h2>
           <div><canvas>canvas</canvas></div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="embedded__meter">
+        <article id="embedded-meter">
           <h2>Meter</h2>
           <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="embedded__progress">
+        <article id="embedded-progress">
           <h2>Progress</h2>
           <div><progress>progress</progress></div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
-        <article id="embedded__svg">
+        <article id="embedded-svg">
           <h2>Inline SVG</h2>
           <div><svg width="100px" height="100px"><circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle></svg></div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          c
         </article>
-        <article id="embedded__iframe">
+        <article id="embedded-iframe">
           <h2>IFrame</h2>
           <div><iframe src="index.html" height="300"></iframe></div>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </article>
       </section>
       <section id="forms">
         <h2>Form elements</h2>
         <form>
-          <fieldset id="forms__input">
+          <fieldset id="forms-input">
             <legend>Input fields</legend>
             <p>
-              <label for="input__text">Text Input</label>
-              <input id="input__text" type="text" placeholder="Text Input">
+              <label for="input-text">Text Input</label>
+              <input id="input-text" type="text" placeholder="Text Input">
             </p>
             <p>
-              <label for="input__password">Password</label>
-              <input id="input__password" type="password" placeholder="Type your Password">
+              <label for="input-password">Password</label>
+              <input id="input-password" type="password" placeholder="Type your Password">
             </p>
             <p>
-              <label for="input__webaddress">Web Address</label>
-              <input id="input__webaddress" type="url" placeholder="http://yoursite.com">
+              <label for="input-webaddress">Web Address</label>
+              <input id="input-webaddress" type="url" placeholder="https://yoursite.com">
             </p>
             <p>
-              <label for="input__emailaddress">Email Address</label>
-              <input id="input__emailaddress" type="email" placeholder="name@email.com">
+              <label for="input-emailaddress">Email Address</label>
+              <input id="input-emailaddress" type="email" placeholder="name@email.com">
             </p>
             <p>
-              <label for="input__phone">Phone Number</label>
-              <input id="input__phone" type="tel" placeholder="(999) 999-9999">
+              <label for="input-phone">Phone Number</label>
+              <input id="input-phone" type="tel" placeholder="(999) 999-9999">
             </p>
             <p>
-              <label for="input__search">Search</label>
-              <input id="input__search" type="search" placeholder="Enter Search Term">
+              <label for="input-search">Search</label>
+              <input id="input-search" type="search" placeholder="Enter Search Term">
             </p>
             <p>
-              <label for="input__text2">Number Input</label>
-              <input id="input__text2" type="number" placeholder="Enter a Number">
+              <label for="input-text2">Number</label>
+              <input id="input-text2" type="number" placeholder="Enter a Number">
             </p>
             <p>
-              <label for="input__text3" class="error">Error</label>
-              <input id="input__text3" class="is-error" type="text" placeholder="Text Input">
+              <label for="input-text4">Readonly</label>
+              <input id="input-text4" type="text" placeholder="Text Input" readonly>
             </p>
             <p>
-              <label for="input__text4" class="valid">Valid</label>
-              <input id="input__text4" class="is-valid" type="text" placeholder="Text Input">
+              <label for="input-text4">Readonly with value</label>
+              <input id="input-text4" type="text" placeholder="Text Input" readonly value="Hello">
+            </p>
+            <p>
+              <label for="input-text4">Disabled</label>
+              <input id="input-text4" type="text" placeholder="Text Input" disabled>
+            </p>
+            <p>
+              <label for="input-text4">Disabled with value</label>
+              <input id="input-text4" type="text" placeholder="Text Input" disabled value="Hello">
             </p>
           </fieldset>
-          <div><p><a href="#top">[Top]</a></p></div>
-          <fieldset id="forms__select">
+          <p><a href="#top">[Top]</a></p>
+          <fieldset id="forms-select">
             <legend>Select menus</legend>
             <p>
               <label for="select">Select</label>
@@ -304,34 +317,34 @@ module.exports = async function($) {
               </select>
             </p>
           </fieldset>
-          <div><p><a href="#top">[Top]</a></p></div>
-          <fieldset id="forms__checkbox">
+          <p><a href="#top">[Top]</a></p>
+          <fieldset id="forms-checkbox">
             <legend>Checkboxes</legend>
-            <ul class="list list--bare">
+            <ul>
               <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
               <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
               <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
             </ul>
           </fieldset>
-          <div><p><a href="#top">[Top]</a></p></div>
-          <fieldset id="forms__radio">
+          <p><a href="#top">[Top]</a></p>
+          <fieldset id="forms-radio">
             <legend>Radio buttons</legend>
-            <ul class="list list--bare">
+            <ul>
               <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
               <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option 2</label></li>
               <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option 3</label></li>
             </ul>
           </fieldset>
-          <div><p><a href="#top">[Top]</a></p></div>
-          <fieldset id="forms__textareas">
+          <p><a href="#top">[Top]</a></p>
+          <fieldset id="forms-textareas">
             <legend>Textareas</legend>
             <p>
               <label for="textarea">Textarea</label>
               <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
             </p>
           </fieldset>
-          <div><p><a href="#top">[Top]</a></p></div>
-          <fieldset id="forms__html5">
+          <p><a href="#top">[Top]</a></p>
+          <fieldset id="forms-html5">
             <legend>HTML5 inputs</legend>
             <p>
               <label for="ic">Color input</label>
@@ -362,8 +375,8 @@ module.exports = async function($) {
               <input type="datetime-local" id="idtl" value="1970-01-01T00:00">
             </p>
           </fieldset>
-          <div><p><a href="#top">[Top]</a></p></div>
-          <fieldset id="forms__action">
+          <p><a href="#top">[Top]</a></p>
+          <fieldset id="forms-action">
             <legend>Action buttons</legend>
             <p>
               <input type="submit" value="<input type=submit>">
@@ -378,7 +391,7 @@ module.exports = async function($) {
               <button type="button" disabled>&lt;button disabled&gt;</button>
             </p>
           </fieldset>
-          <div><p><a href="#top">[Top]</a></p></div>
+          <p><a href="#top">[Top]</a></p>
         </form>
       </section>
     </main>

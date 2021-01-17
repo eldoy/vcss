@@ -44,7 +44,7 @@ $small-breakpoint: 400px !default;
 $large-breakpoint: 960px !default;
 
 //Colors
-$primary: #1b8080 !default;
+$light: #1b8080 !default;
 $accent: #64ffda !default;
 $danger: #f44336 !default;
 $yellow: #ffeb3b !default;
@@ -65,31 +65,31 @@ $link-color: $blue !default;
 $link-hover-color: darken($link-color, 15%) !default;
 
 //Buttons
-$button-background-color: $primary !default;
+$button-background-color: $light !default;
 $button-border-radius: $border-radius !default;
 $button-color: $white !default;
 $button-padding: $sm-pad $md-pad !default;
 $button-border: 1px solid transparent !default;
 $button-font-size: 1rem !default;
 $button-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
-$button-hover-color: darken($primary, 7.5%) !default;
-$button-hover-border-color: darken($primary, 10%) !default;
+$button-hover-color: darken($light, 7.5%) !default;
+$button-hover-border-color: darken($light, 10%) !default;
 $button-hover-color: $white !default;
-$button-active-color: darken($primary, 10%) !default;
-$button-active-border-color: darken($primary, 12.5%) !default;
+$button-active-color: darken($light, 10%) !default;
+$button-active-border-color: darken($light, 12.5%) !default;
 $button-active-color: $white !default;
 $button-focus-outline: 0 !default;
-$button-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.5) !default;
-$button-disabled-color: $primary !default;
-$button-disabled-border-color: $primary !default;
+$button-focus-shadow: 0 0 0 0.2rem fade_out($light, 0.5) !default;
+$button-disabled-color: $light !default;
+$button-disabled-border-color: $light !default;
 $button-disabled-color: $white !default;
 
 //Forms
 $label-color: $dark !default;
 $input-focus-background-color: #fff !default;
-$input-focus-border-color: mix($primary, #fff) !default;
+$input-focus-border-color: mix($light, #fff) !default;
 $input-focus-outline: 0 !default;
-$input-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.75) !default;
+$input-focus-shadow: 0 0 0 0.2rem fade_out($light, 0.75) !default;
 $input-outline: 1px thin $line !default;
 $input-disabled-background-color: $line !default;
 $input-disabled-color: $secondary !default;
@@ -106,8 +106,8 @@ $monospace: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
 $font-family: $sans-serif !default;
 
 //Typography
-$font-size-base: 16px !default;
-$font-size-small: ceil(($font-size-base * 0.85)) !default;
+$font-size: 16px !default;
+$font-size-small: ceil(($font-size * 0.85)) !default;
 $font-size-h1: 40px !default;
 $font-size-h2: 32px !default;
 $font-size-h3: 28px !default;

@@ -1,13 +1,12 @@
 body {
   color: $text;
   font-family: $font-family;
-  font-size: $font-size-base;
-  line-height: $line-height-base;
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 p {
-  margin: 0;
-  margin-bottom: $md-pad;
+  margin: 0 0 $md-pad;
 }
 
 h1,
@@ -19,7 +18,11 @@ h6 {
   color: inherit;
   font-family: inherit;
   line-height: 1.2;
-  font-weight: 500;
+  font-weight: 600;
+  small {
+    margin-left: $sm-pad;
+    color: $small;
+  }
 }
 
 h1 {
@@ -52,17 +55,12 @@ h6 {
   margin: $md-pad 0 $xs-pad;
 }
 
-small {
-  color: $dark;
-  vertical-align: bottom;
-}
-
 pre {
-  background: $light;
+  background: $preserve;
   color: $text;
   display: block;
   font-family: $monospace;
-  font-size: $font-size-base;
+  font-size: $font-size;
   margin: $md-pad 0;
   padding: $md-pad;
   white-space: pre-wrap;
@@ -72,7 +70,7 @@ pre {
 code {
   color: $text;
   font-family: $monospace;
-  font-size: $font-size-base;
+  font-size: $font-size;
   line-height: inherit;
   margin: 0;
   padding: 0;
@@ -109,7 +107,7 @@ ol {
 }
 
 blockquote {
-  border-left: 2px solid $text;
+  border-left: 2px solid $quote;
   font-family: $serif;
   font-style: italic;
   margin: $md-pad 0;

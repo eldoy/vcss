@@ -18,7 +18,7 @@ trix-editor,
 #card-element {
   background: $white;
   background-clip: padding-box;
-  border: $border;
+  border: $input-border;
   border-radius: $border-radius;
   color: $text;
   display: block;
@@ -29,17 +29,19 @@ trix-editor,
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   font-family: $sans-serif;
   word-break: normal;
-  &:focus {
+  &:not([readonly]):focus {
     background-color: $input-focus-background-color;
     border-color: $input-focus-border-color;
     outline: $input-focus-outline;
     box-shadow: $input-focus-shadow;
   }
-  &:disabled {
+  &[disabled] {
     background-color: $input-disabled-background-color;
-    color: $input-disabled-color;
     cursor: not-allowed;
     opacity: 1;
+  }
+  &[readonly] {
+    background-color: $input-readonly-background-color;
   }
 }
 
@@ -57,13 +59,6 @@ input[type="checkbox"]:focus {
   outline: $input-outline;
 }
 
-input[readonly],
-select[readonly],
-textarea[readonly] {
-  border-color: $input-readonly-border-color;
-  color: $input-readonly-color;
-}
-
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
@@ -78,16 +73,13 @@ input[type="checkbox"]:focus:invalid:focus {
 }
 
 select {
-  border: $border;
   vertical-align: sub;
-}
-
-select:not([size]):not([multiple]) {
-  height: calc(2.25rem + 2px);
-}
-
-select[multiple] {
-  height: auto;
+  &:not([size]):not([multiple]) {
+    height: calc(2.25rem + 2px);
+  }
+  &[multiple] {
+    height: auto;
+  }
 }
 
 label {
