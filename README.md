@@ -4,7 +4,7 @@ Semantic and minimal CSS library, only about 3Kb gzipped and minified.
 
 Based on [marx](https://mblode.github.io/marx/) and [sanitize](https://csstools.github.io/sanitize.css/) but with extras:
 
-* Different defaults, a bit lighter
+* Different defaults, more light weight
 * More SCSS variables and colors
 * Extra tag styles and utilities
 * Lots of tweaks and some bug fixes
@@ -45,7 +45,7 @@ $medium: #ccc !default;
 $preserve: #fafafa !default;
 $input: #333 !default;
 $button: #efefef !default;
-$small: #999;
+$small: #999 !default;
 
 // Basic stylings
 $border: 1px solid $line !default;
@@ -108,7 +108,7 @@ $font-size-h2: 32px !default;
 $font-size-h3: 25px !default;
 $font-size-h4: 18px !default;
 $font-size-h5: 16px !default;
-$font-size-h6: 100% !default;
+$font-size-h6: 80% !default;
 $line-height: 1.6 !default;
 ```
 
