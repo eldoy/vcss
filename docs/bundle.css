@@ -498,7 +498,6 @@ textarea,
   clip: rect(0, 0, 0, 0);
   position: absolute; }
 
-/*! Marx v3.0.6 - The classless CSS reset (perfect for Communists) | MIT License | https://github.com/mblode/marx */
 main,
 header,
 footer,
@@ -513,12 +512,10 @@ summary {
 
 main {
   display: block;
-  margin: 0 auto;
   max-width: 960px;
   padding: 0 16px 16px; }
 
 footer {
-  border-top: 1px solid #ded8c7;
   padding: 16px 0;
   text-align: center; }
   footer p {
@@ -526,7 +523,7 @@ footer {
 
 hr {
   border: 0;
-  border-top: 1px solid #ded8c7;
+  border-top: 1px solid #eaeaea;
   display: block;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -556,14 +553,13 @@ video {
   border: 0; }
 
 body {
-  color: #302e2b;
+  color: #111;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 1.5; }
+  line-height: 1.6; }
 
 p {
-  margin: 0;
-  margin-bottom: 16px; }
+  margin: 0 0 16px; }
 
 h1,
 h2,
@@ -574,7 +570,15 @@ h6 {
   color: inherit;
   font-family: inherit;
   line-height: 1.2;
-  font-weight: 500; }
+  font-weight: 600; }
+  h1 small,
+  h2 small,
+  h3 small,
+  h4 small,
+  h5 small,
+  h6 small {
+    margin-left: 8px;
+    color: #999; }
 
 h1 {
   font-size: 40px;
@@ -585,28 +589,24 @@ h2 {
   margin: 20px 0 16px; }
 
 h3 {
-  font-size: 28px;
+  font-size: 25px;
   margin: 16px 0 4px; }
 
 h4 {
-  font-size: 24px;
+  font-size: 18px;
   margin: 16px 0 4px; }
 
 h5 {
-  font-size: 20px;
-  margin: 16px 0 4px; }
-
-h6 {
   font-size: 16px;
   margin: 16px 0 4px; }
 
-small {
-  color: #706d64;
-  vertical-align: bottom; }
+h6 {
+  font-size: 100%;
+  margin: 16px 0 4px; }
 
 pre {
-  background: #f7f7f9;
-  color: #302e2b;
+  background: #fafafa;
+  color: #111;
   display: block;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 16px;
@@ -616,7 +616,7 @@ pre {
   overflow-wrap: break-word; }
 
 code {
-  color: #302e2b;
+  color: #111;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 16px;
   line-height: inherit;
@@ -627,11 +627,11 @@ code {
   word-wrap: break-word; }
 
 a {
-  color: #007bff;
+  color: #33f;
   text-decoration: none;
   background-color: transparent; }
   a:hover, a:focus {
-    color: #0056b3;
+    color: #0000e6;
     text-decoration: underline; }
 
 dl {
@@ -647,7 +647,7 @@ ol {
   vertical-align: baseline; }
 
 blockquote {
-  border-left: 2px solid #302e2b;
+  border-left: 2px solid #ccc;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   margin: 16px 0;
@@ -671,7 +671,7 @@ sub {
   vertical-align: sub; }
 
 mark {
-  background: #ffeb3b; }
+  background: #ff5; }
 
 input:not([type]),
 input[type="text"],
@@ -688,13 +688,14 @@ input[type="number"],
 input[type="search"],
 input[type="tel"],
 select,
-textarea
+textarea,
+trix-editor,
 #card-element {
   background: #fff;
   background-clip: padding-box;
-  border: 1px solid #ded8c7;
+  border: 1px solid #333;
   border-radius: 4px;
-  color: #302e2b;
+  color: #111;
   display: block;
   width: 100%;
   font-size: 1rem;
@@ -703,95 +704,104 @@ textarea
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   word-break: normal; }
+  input:not([type]):not([readonly]):focus,
+  input[type="text"]:not([readonly]):focus,
+  input[type="password"]:not([readonly]):focus,
+  input[type="email"]:not([readonly]):focus,
+  input[type="url"]:not([readonly]):focus,
+  input[type="date"]:not([readonly]):focus,
+  input[type="month"]:not([readonly]):focus,
+  input[type="time"]:not([readonly]):focus,
+  input[type="datetime"]:not([readonly]):focus,
+  input[type="datetime-local"]:not([readonly]):focus,
+  input[type="week"]:not([readonly]):focus,
+  input[type="number"]:not([readonly]):focus,
+  input[type="search"]:not([readonly]):focus,
+  input[type="tel"]:not([readonly]):focus,
+  select:not([readonly]):focus,
+  textarea:not([readonly]):focus,
+  trix-editor:not([readonly]):focus,
+  #card-element:not([readonly]):focus {
+    background-color: #fff;
+    border-color: #adadad;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(90, 90, 90, 0.25); }
+  input:not([type])[disabled],
+  input[type="text"][disabled],
+  input[type="password"][disabled],
+  input[type="email"][disabled],
+  input[type="url"][disabled],
+  input[type="date"][disabled],
+  input[type="month"][disabled],
+  input[type="time"][disabled],
+  input[type="datetime"][disabled],
+  input[type="datetime-local"][disabled],
+  input[type="week"][disabled],
+  input[type="number"][disabled],
+  input[type="search"][disabled],
+  input[type="tel"][disabled],
+  select[disabled],
+  textarea[disabled],
+  trix-editor[disabled],
+  #card-element[disabled] {
+    background-color: #fafafa;
+    cursor: not-allowed;
+    opacity: 1; }
+  input:not([type])[readonly],
+  input[type="text"][readonly],
+  input[type="password"][readonly],
+  input[type="email"][readonly],
+  input[type="url"][readonly],
+  input[type="date"][readonly],
+  input[type="month"][readonly],
+  input[type="time"][readonly],
+  input[type="datetime"][readonly],
+  input[type="datetime-local"][readonly],
+  input[type="week"][readonly],
+  input[type="number"][readonly],
+  input[type="search"][readonly],
+  input[type="tel"][readonly],
+  select[readonly],
+  textarea[readonly],
+  trix-editor[readonly],
+  #card-element[readonly] {
+    background-color: #fafafa; }
 
 input[type="color"] {
   background: #fff;
-  border: 1px solid #ded8c7;
+  border: 1px solid #eaeaea;
   border-radius: 4px;
   display: inline-block;
   vertical-align: middle; }
 
-input:not([type]):focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-select:focus,
-textarea:focus,
-#card-element {
-  background-color: #fff;
-  border-color: #8dc0c0;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(27, 128, 128, 0.25); }
-
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 1px thin #ded8c7; }
-
-input:not([type])[disabled],
-input[type="text"][disabled],
-input[type="password"][disabled],
-input[type="email"][disabled],
-input[type="url"][disabled],
-input[type="date"][disabled],
-input[type="month"][disabled],
-input[type="time"][disabled],
-input[type="datetime"][disabled],
-input[type="datetime-local"][disabled],
-input[type="week"][disabled],
-input[type="number"][disabled],
-input[type="search"][disabled],
-input[type="tel"][disabled],
-input[type="color"][disabled],
-select[disabled],
-textarea[disabled] {
-  background-color: #ded8c7;
-  color: #706d64;
-  cursor: not-allowed;
-  opacity: 1; }
-
-input[readonly],
-select[readonly],
-textarea[readonly] {
-  border-color: #ded8c7;
-  color: #706d64; }
+  outline: 1px thin #eaeaea; }
 
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
-  border-color: #ea1c0d;
-  color: #f44336; }
+  border-color: #ff2222;
+  color: #f55; }
 
 input[type="file"]:focus:invalid:focus,
 input[type="radio"]:focus:invalid:focus,
 input[type="checkbox"]:focus:invalid:focus {
-  outline-color: #f44336; }
+  outline-color: #f55; }
 
 select {
-  border: 1px solid #ded8c7;
   vertical-align: sub; }
-
-select:not([size]):not([multiple]) {
-  height: calc(2.25rem + 2px); }
-
-select[multiple] {
-  height: auto; }
+  select:not([size]):not([multiple]) {
+    height: calc(2.25rem + 2px); }
+  select[multiple] {
+    height: auto; }
 
 label {
   display: inline-block;
   line-height: 2;
-  color: #565656; }
+  color: #5a5a5a;
+  font-size: 90%; }
 
 fieldset {
   border: 0;
@@ -799,8 +809,7 @@ fieldset {
   padding: 8px 0; }
 
 legend {
-  border-bottom: 1px solid #ded8c7;
-  color: #302e2b;
+  color: #111;
   display: block;
   margin-bottom: 8px;
   padding: 8px 0;
@@ -821,9 +830,9 @@ input[type=reset],
 input[type=button],
 button,
 .button {
-  background-color: #1b8080;
+  background-color: #efefef;
   border-radius: 4px;
-  color: #fff;
+  color: #111;
   padding: 8px 16px;
   display: inline-block;
   font-weight: 400;
@@ -831,7 +840,7 @@ button,
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: 1px solid transparent;
+  border: 1px solid #ccc;
   font-size: 1rem;
   line-height: 1.5;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
@@ -847,18 +856,14 @@ input[type=reset]:hover,
 input[type=button]:hover,
 button:hover,
 .button:hover {
-  background-color: #146060;
-  border-color: #125656;
-  color: #fff; }
+  background-color: gainsboro; }
 
 input[type=submit]:not(:disabled):active,
 input[type=reset]:not(:disabled):active,
 input[type=button]:not(:disabled):active,
 button:not(:disabled):active,
 .button:active {
-  background-color: #125656;
-  border-color: #104b4b;
-  color: #fff; }
+  background-color: #d6d6d6; }
 
 input[type=submit]:focus,
 input[type=reset]:focus,
@@ -866,7 +871,7 @@ input[type=button]:focus,
 button:focus,
 .button:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(27, 128, 128, 0.5); }
+  box-shadow: 0 0 0 0.2rem rgba(239, 239, 239, 0.5); }
 
 input[type=submit]:disabled,
 input[type=reset]:disabled,
@@ -875,12 +880,10 @@ button:disabled,
 .button.disabled {
   opacity: 0.65;
   cursor: not-allowed;
-  background-color: #1b8080;
-  border-color: #1b8080;
-  color: #fff; }
+  background-color: #efefef; }
 
 table {
-  border-top: 1px solid #ded8c7;
+  border-top: 1px solid #eaeaea;
   margin-bottom: 16px; }
 
 caption {
@@ -888,7 +891,7 @@ caption {
 
 thead th {
   border: 0;
-  border-bottom: 2px solid #ded8c7;
+  border-bottom: 1px solid #eaeaea;
   text-align: left; }
 
 tr {
@@ -896,7 +899,7 @@ tr {
 
 th,
 td {
-  border-bottom: 1px solid #ded8c7;
+  border-bottom: 1px solid #eaeaea;
   padding: 16px;
   vertical-align: inherit; }
 
@@ -904,8 +907,6 @@ tfoot tr {
   text-align: left; }
 
 tfoot td {
-  color: #706d64;
-  font-size: 8px;
   font-style: italic;
   padding: 16px 4px; }
 
