@@ -53,17 +53,17 @@ module.exports = async function($) {
       <section id="text">
         <h2>Headings</h2>
         <article id="text-headings">
-          <h1>Heading 1<small>Hello</small></h1>
+          <h1>Heading 1</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
-          <h2>Heading 2<small>Hello</small></h2>
+          <h2>Heading 2</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
-          <h3>Heading 3<small>Hello</small></h3>
+          <h3>Heading 3</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
-          <h4>Heading 4<small>Hello</small></h4>
+          <h4>Heading 4</h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
-          <h5>Heading 5<small>Hello</small></h5>
+          <h5>Heading 5</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
-          <h6>Heading 6<small>Hello</small></h6>
+          <h6>Heading 6</h6>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores molestiae doloremque quibusdam nulla, repellendus praesentium nostrum veritatis, molestias, cumque reiciendis in corporis deleniti suscipit consequatur harum consequuntur. Consequuntur, corrupti? Doloribus.</p>
 
           <p><a href="#top">[Top]</a></p>
