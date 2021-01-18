@@ -719,7 +719,7 @@ input[type=button]:focus,
 button:focus,
 .button:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(239, 239, 239, 0.5); }
+  box-shadow: 0 0 0 0.2rem rgba(68, 68, 255, 0.25); }
 
 input[type=submit]:disabled,
 input[type=reset]:disabled,

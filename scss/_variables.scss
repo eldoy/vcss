@@ -43,7 +43,7 @@ $button-transition: color .15s ease-in-out, background-color .15s ease-in-out, b
 $button-hover-background-color: darken($button, 7.5%) !default;
 $button-active-background-color: darken($button, 10%) !default;
 $button-focus-outline: 0 !default;
-$button-focus-shadow: 0 0 0 0.2rem fade_out($button, 0.5) !default;
+$button-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.75) !default;
 $button-disabled-background-color: $button !default;
 
 // Forms
@@ -58,7 +58,7 @@ $input-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.75) !default;
 $input-outline: 1px thin $line !default;
 $input-disabled-background-color: $disabled !default;
 $input-readonly-background-color: $disabled !default;
-$input-invalid-border-color: darken($danger, 10) !default;
+$input-invalid-border-color: darken($danger, 10%) !default;
 $input-invalid-color: $danger !default;
 $input-focus-invalid-outline-color: $danger !default;
 
