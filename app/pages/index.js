@@ -1,12 +1,12 @@
 const tomarkup = require('tomarkup')()
 
 module.exports = async function($) {
-  $.page.title = 'VCSS'
+  $.page.title = 'VCSS Semantic and minimal CSS library'
 
   return /* html */`
     <main>
       <header id="top">
-        <h1>VCSS</h1>
+        <h1><img src="img/vcss-logo.svg" style="height:50px"></h1>
         <a href="https://github.com/eldoy/vcss">
           <img src="img/gh.svg" style="height:25px">
         </a>
@@ -297,16 +297,16 @@ module.exports = async function($) {
               <input id="input-text4" type="text" placeholder="Text Input" readonly>
             </p>
             <p>
-              <label for="input-text4">Readonly with value</label>
-              <input id="input-text4" type="text" placeholder="Text Input" readonly value="Hello">
+              <label for="input-text5">Readonly with value</label>
+              <input id="input-text5" type="text" placeholder="Text Input" readonly value="Hello">
             </p>
             <p>
-              <label for="input-text4">Disabled</label>
-              <input id="input-text4" type="text" placeholder="Text Input" disabled>
+              <label for="input-text6">Disabled</label>
+              <input id="input-text6" type="text" placeholder="Text Input" disabled>
             </p>
             <p>
-              <label for="input-text4">Disabled with value</label>
-              <input id="input-text4" type="text" placeholder="Text Input" disabled value="Hello">
+              <label for="input-text7">Disabled with value</label>
+              <input id="input-text7" type="text" placeholder="Text Input" disabled value="Hello">
             </p>
           </fieldset>
           <p><a href="#top">[Top]</a></p>
