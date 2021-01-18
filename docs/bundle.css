@@ -22,27 +22,24 @@
 /**
  * 1. Use the default cursor in all browsers (opinionated).
  * 2. Change the line height in all browsers (opinionated).
- * 3. Use a 4-space tab width in all browsers (opinionated).
- * 4. Remove the grey highlight on links in iOS (opinionated).
- * 5. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- * 6. Breaks words to prevent overflow in all browsers (opinionated).
+ * 3. Breaks words to prevent overflow in all browsers (opinionated).
+ * 4. Use a 4-space tab width in all browsers (opinionated).
+ * 5. Remove the grey highlight on links in iOS (opinionated).
+ * 6. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
   cursor: default;
   /* 1 */
   line-height: 1.5;
   /* 2 */
+  overflow-wrap: anywhere;
+  /* 3 */
   -moz-tab-size: 4;
-  /* 3 */
+  /* 4 */
   tab-size: 4;
-  /* 3 */
+  /* 4 */
   -webkit-tap-highlight-color: transparent;
-  -ms-text-size-adjust: 100%;
-  /* 5 */
   -webkit-text-size-adjust: 100%;
-  /* 5 */
-  word-break: break-word;
   /* 6 */ }
 
 /* Sections
@@ -64,7 +61,7 @@ h1 {
 /* Grouping content
  * ========================================================================== */
 /**
- * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
+ * Remove the margin on nested lists in Chrome, Edge, and Safari.
  */
 dl dl,
 dl ol,
@@ -74,39 +71,21 @@ ul dl {
   margin: 0; }
 
 /**
- * Remove the margin on nested lists in Edge 18- and IE.
- */
-ol ol,
-ol ul,
-ul ol,
-ul ul {
-  margin: 0; }
-
-/**
  * 1. Correct the inheritance of border color in Firefox.
  * 2. Add the correct box sizing in Firefox.
- * 3. Show the overflow in Edge 18- and IE.
  */
 hr {
   color: inherit;
   /* 1 */
   height: 0;
-  /* 2 */
-  overflow: visible;
-  /* 3 */ }
-
-/**
- * Add the correct display in IE.
- */
-main {
-  display: block; }
+  /* 2 */ }
 
 /**
  * Remove the list style on navigation lists in all browsers (opinionated).
  */
 nav ol,
 nav ul {
-  list-style: none;
+  list-style: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");
   padding: 0; }
 
 /**
@@ -126,20 +105,12 @@ pre {
   font-size: 1em;
   /* 2 */
   overflow: auto;
-  /* 3 */
-  -ms-overflow-style: scrollbar;
   /* 3 */ }
 
 /* Text-level semantics
  * ========================================================================== */
 /**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent; }
-
-/**
- * Add the correct text decoration in Edge 18-, IE, and Safari.
+ * Add the correct text decoration in Safari.
  */
 abbr[title] {
   text-decoration: underline;
@@ -184,13 +155,6 @@ video {
   vertical-align: middle; }
 
 /**
- * Add the correct display in IE 9-.
- */
-audio,
-video {
-  display: inline-block; }
-
-/**
  * Add the correct display in iOS 4-7.
  */
 audio:not([controls]) {
@@ -204,22 +168,10 @@ iframe {
   border-style: none; }
 
 /**
- * Remove the border on images within links in IE 10-.
- */
-img {
-  border-style: none; }
-
-/**
  * Change the fill color to match the text color in all browsers (opinionated).
  */
 svg:not([fill]) {
   fill: currentColor; }
-
-/**
- * Hide the overflow in IE.
- */
-svg:not(:root) {
-  overflow: hidden; }
 
 /* Tabular data
  * ========================================================================== */
@@ -247,22 +199,18 @@ select {
   margin: 0; }
 
 /**
- * 1. Show the overflow in IE.
- * 2. Remove the inheritance of text transform in Edge 18-, Firefox, and IE.
+ * Remove the inheritance of text transform in Firefox.
  */
 button {
-  overflow: visible;
-  /* 1 */
-  text-transform: none;
-  /* 2 */ }
+  text-transform: none; }
 
 /**
  * Correct the inability to style buttons in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type="button" i],
+[type="reset" i],
+[type="submit" i] {
   -webkit-appearance: button; }
 
 /**
@@ -276,34 +224,10 @@ fieldset {
   /* 2 */ }
 
 /**
- * Show the overflow in Edge 18- and IE.
- */
-input {
-  overflow: visible; }
-
-/**
- * 1. Correct the text wrapping in Edge 18- and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- */
-legend {
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  white-space: normal;
-  /* 1 */ }
-
-/**
- * 1. Add the correct display in Edge 18- and IE.
- * 2. Add the correct vertical alignment in Chrome, Edge, and Firefox.
+ * Add the correct vertical alignment in Chrome, Edge, and Firefox.
  */
 progress {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */ }
+  vertical-align: baseline; }
 
 /**
  * Remove the inheritance of text transform in Firefox.
@@ -313,31 +237,19 @@ select {
 
 /**
  * 1. Remove the margin in Firefox and Safari.
- * 2. Remove the default vertical scrollbar in IE.
  * 3. Change the resize direction in all browsers (opinionated).
  */
 textarea {
   margin: 0;
   /* 1 */
-  overflow: auto;
-  /* 2 */
   resize: vertical;
-  /* 3 */
-  resize: block;
   /* 3 */ }
-
-/**
- * Remove the padding in IE 10-.
- */
-[type="checkbox"],
-[type="radio"] {
-  padding: 0; }
 
 /**
  * 1. Correct the odd appearance in Chrome, Edge, and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type="search" i] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -395,19 +307,12 @@ textarea {
 /* Interactive
  * ========================================================================== */
 /*
- * Add the correct display in Edge 18- and IE.
- */
-details {
-  display: block; }
-
-/*
- * Add the correct styles in Edge 18-, IE, and Safari.
+ * Add the correct styles in Safari.
  */
 dialog {
   background-color: white;
   border: solid;
   color: black;
-  display: block;
   height: -moz-fit-content;
   height: -webkit-fit-content;
   height: fit-content;
@@ -429,48 +334,12 @@ dialog:not([open]) {
 summary {
   display: list-item; }
 
-/* Scripting
- * ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- */
-canvas {
-  display: inline-block; }
-
-/**
- * Add the correct display in IE.
- */
-template {
-  display: none; }
-
-/* User interaction
- * ========================================================================== */
-/*
- * Remove the tapping delay in IE 10.
- */
-a,
-area,
-button,
-input,
-label,
-select,
-summary,
-textarea,
-[tabindex] {
-  -ms-touch-action: manipulation; }
-
-/**
- * Add the correct display in IE 10-.
- */
-[hidden] {
-  display: none; }
-
 /* Accessibility
  * ========================================================================== */
 /**
  * Change the cursor on busy elements in all browsers (opinionated).
  */
-[aria-busy="true"] {
+[aria-busy="true" i] {
   cursor: progress; }
 
 /*
@@ -483,7 +352,7 @@ textarea,
  * Change the cursor on disabled, not-editable, or otherwise
  * inoperable elements in all browsers (opinionated).
  */
-[aria-disabled="true"],
+[aria-disabled="true" i],
 [disabled] {
   cursor: not-allowed; }
 
@@ -491,14 +360,13 @@ textarea,
  * Change the display on visually hidden accessible elements
  * in all browsers (opinionated).
  */
-[aria-hidden="false"][hidden] {
+[aria-hidden="false" i][hidden] {
   display: initial; }
 
-[aria-hidden="false"][hidden]:not(:focus) {
+[aria-hidden="false" i][hidden]:not(:focus) {
   clip: rect(0, 0, 0, 0);
   position: absolute; }
 
-/*! Marx v3.0.6 - The classless CSS reset (perfect for Communists) | MIT License | https://github.com/mblode/marx */
 main,
 header,
 footer,
@@ -513,12 +381,10 @@ summary {
 
 main {
   display: block;
-  margin: 0 auto;
-  max-width: 768px;
+  max-width: 960px;
   padding: 0 16px 16px; }
 
 footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
   padding: 16px 0;
   text-align: center; }
   footer p {
@@ -526,7 +392,7 @@ footer {
 
 hr {
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid #eaeaea;
   display: block;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -546,9 +412,7 @@ img {
   aside {
     clear: both;
     display: block;
-    max-width: 100%; }
-  img {
-    margin-right: 16px; } }
+    max-width: 100%; } }
 
 embed,
 iframe,
@@ -556,14 +420,13 @@ video {
   border: 0; }
 
 body {
-  color: rgba(0, 0, 0, 0.8);
+  color: #111;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
-  line-height: 1.5; }
+  line-height: 1.6; }
 
 p {
-  margin: 0;
-  margin-bottom: 16px; }
+  margin: 0 0 16px; }
 
 h1,
 h2,
@@ -574,7 +437,7 @@ h6 {
   color: inherit;
   font-family: inherit;
   line-height: 1.2;
-  font-weight: 500; }
+  font-weight: 600; }
 
 h1 {
   font-size: 40px;
@@ -585,28 +448,24 @@ h2 {
   margin: 20px 0 16px; }
 
 h3 {
-  font-size: 28px;
+  font-size: 25px;
   margin: 16px 0 4px; }
 
 h4 {
-  font-size: 24px;
+  font-size: 18px;
   margin: 16px 0 4px; }
 
 h5 {
-  font-size: 20px;
-  margin: 16px 0 4px; }
-
-h6 {
   font-size: 16px;
   margin: 16px 0 4px; }
 
-small {
-  color: rgba(0, 0, 0, 0.54);
-  vertical-align: bottom; }
+h6 {
+  font-size: 80%;
+  margin: 16px 0 4px; }
 
 pre {
-  background: #f7f7f9;
-  color: rgba(0, 0, 0, 0.8);
+  background: #fafafa;
+  color: #111;
   display: block;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 16px;
@@ -616,7 +475,7 @@ pre {
   overflow-wrap: break-word; }
 
 code {
-  color: rgba(0, 0, 0, 0.8);
+  color: #111;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
   font-size: 16px;
   line-height: inherit;
@@ -626,28 +485,16 @@ code {
   word-break: break-all;
   word-wrap: break-word; }
 
-a {
-  color: #007bff;
+a:not(.button) {
+  color: #44f;
   text-decoration: none;
   background-color: transparent; }
-  a:hover, a:focus {
-    color: #0062cc;
+  a:not(.button):hover, a:not(.button):focus {
+    color: #1111ff;
     text-decoration: underline; }
 
-dl {
-  margin-bottom: 16px; }
-
-dd {
-  margin-left: 40px; }
-
-ul,
-ol {
-  margin-bottom: 8px;
-  padding-left: 40px;
-  vertical-align: baseline; }
-
 blockquote {
-  border-left: 2px solid rgba(0, 0, 0, 0.8);
+  border-left: 2px solid #ccc;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   margin: 16px 0;
@@ -671,8 +518,9 @@ sub {
   vertical-align: sub; }
 
 mark {
-  background: #ffeb3b; }
+  background: #ff5; }
 
+input:not([type]),
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -687,12 +535,14 @@ input[type="number"],
 input[type="search"],
 input[type="tel"],
 select,
-textarea {
+textarea,
+trix-editor,
+#card-element {
   background: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid #333;
   border-radius: 4px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #111;
   display: block;
   width: 100%;
   font-size: 1rem;
@@ -701,138 +551,123 @@ textarea {
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   word-break: normal; }
+  input:not([type]):focus,
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  input[type="url"]:focus,
+  input[type="date"]:focus,
+  input[type="month"]:focus,
+  input[type="time"]:focus,
+  input[type="datetime"]:focus,
+  input[type="datetime-local"]:focus,
+  input[type="week"]:focus,
+  input[type="number"]:focus,
+  input[type="search"]:focus,
+  input[type="tel"]:focus,
+  select:focus,
+  textarea:focus,
+  trix-editor:focus,
+  #card-element:focus {
+    background-color: #fff;
+    border-color: #a2a2ff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(68, 68, 255, 0.25); }
+  input:not([type])[disabled],
+  input[type="text"][disabled],
+  input[type="password"][disabled],
+  input[type="email"][disabled],
+  input[type="url"][disabled],
+  input[type="date"][disabled],
+  input[type="month"][disabled],
+  input[type="time"][disabled],
+  input[type="datetime"][disabled],
+  input[type="datetime-local"][disabled],
+  input[type="week"][disabled],
+  input[type="number"][disabled],
+  input[type="search"][disabled],
+  input[type="tel"][disabled],
+  select[disabled],
+  textarea[disabled],
+  trix-editor[disabled],
+  #card-element[disabled] {
+    background-color: #fafafa;
+    cursor: not-allowed;
+    opacity: 1; }
+  input:not([type])[readonly],
+  input[type="text"][readonly],
+  input[type="password"][readonly],
+  input[type="email"][readonly],
+  input[type="url"][readonly],
+  input[type="date"][readonly],
+  input[type="month"][readonly],
+  input[type="time"][readonly],
+  input[type="datetime"][readonly],
+  input[type="datetime-local"][readonly],
+  input[type="week"][readonly],
+  input[type="number"][readonly],
+  input[type="search"][readonly],
+  input[type="tel"][readonly],
+  select[readonly],
+  textarea[readonly],
+  trix-editor[readonly],
+  #card-element[readonly] {
+    background-color: #fafafa; }
 
 input[type="color"] {
   background: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid #eaeaea;
   border-radius: 4px;
   display: inline-block;
   vertical-align: middle; }
 
-input:not([type]) {
-  -webkit-appearance: none;
-  background: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: rgba(0, 0, 0, 0.8);
-  display: block;
-  width: 100%;
-  padding: 8px 16px;
-  line-height: 1.5;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  text-align: left;
-  word-break: normal; }
-
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-select:focus,
-textarea:focus {
-  background-color: #fff;
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-
-input:not([type]):focus {
-  background-color: #fff;
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: 1px thin rgba(0, 0, 0, 0.12); }
-
-input[type="text"][disabled],
-input[type="password"][disabled],
-input[type="email"][disabled],
-input[type="url"][disabled],
-input[type="date"][disabled],
-input[type="month"][disabled],
-input[type="time"][disabled],
-input[type="datetime"][disabled],
-input[type="datetime-local"][disabled],
-input[type="week"][disabled],
-input[type="number"][disabled],
-input[type="search"][disabled],
-input[type="tel"][disabled],
-input[type="color"][disabled],
-select[disabled],
-textarea[disabled] {
-  background-color: rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.54);
-  cursor: not-allowed;
-  opacity: 1; }
-
-input:not([type])[disabled] {
-  background-color: rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.54);
-  cursor: not-allowed;
-  opacity: 1; }
-
-input[readonly],
-select[readonly],
-textarea[readonly] {
-  border-color: rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.54); }
+  outline: 1px thin #eaeaea; }
 
 input:focus:invalid,
 textarea:focus:invalid,
 select:focus:invalid {
-  border-color: #ea1c0d;
-  color: #f44336; }
+  border-color: #ff2222;
+  color: #f55; }
 
 input[type="file"]:focus:invalid:focus,
 input[type="radio"]:focus:invalid:focus,
 input[type="checkbox"]:focus:invalid:focus {
-  outline-color: #f44336; }
+  outline-color: #f55; }
 
 select {
-  border: 1px solid rgba(0, 0, 0, 0.12);
   vertical-align: sub; }
-
-select:not([size]):not([multiple]) {
-  height: calc(2.25rem + 2px); }
-
-select[multiple] {
-  height: auto; }
+  select:not([size]):not([multiple]) {
+    height: calc(2.25rem + 2px); }
+  select[multiple] {
+    height: auto; }
 
 label {
   display: inline-block;
-  line-height: 2; }
+  line-height: 2;
+  color: #5a5a5a;
+  font-size: 90%; }
+
+legend {
+  padding: 0;
+  display: table;
+  font-size: 16px;
+  margin-bottom: 8px; }
 
 fieldset {
   border: 0;
+  padding: 0.01em 0 0 0;
   margin: 0;
-  padding: 8px 0; }
-
-legend {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.8);
-  display: block;
-  margin-bottom: 8px;
-  padding: 8px 0;
-  width: 100%; }
+  min-width: 0; }
 
 textarea {
   overflow: auto;
   resize: vertical; }
 
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
   display: inline; }
@@ -840,11 +675,11 @@ input[type=radio] {
 input[type=submit],
 input[type=reset],
 input[type=button],
-button {
-  background-color: #007bff;
-  border: #007bff;
+button,
+.button {
+  background-color: #efefef;
   border-radius: 4px;
-  color: #fff;
+  color: #111;
   padding: 8px 16px;
   display: inline-block;
   font-weight: 400;
@@ -852,10 +687,11 @@ button {
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: 1px solid transparent;
+  border: 1px solid #ccc;
   font-size: 1rem;
   line-height: 1.5;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; }
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-decoration: none; }
 
 input[type=submit]::-moz-focus-inner,
 input[type=reset]::-moz-focus-inner,
@@ -866,65 +702,58 @@ button::-moz-focus-inner {
 input[type=submit]:hover,
 input[type=reset]:hover,
 input[type=button]:hover,
-button:hover {
-  background-color: #0069d9;
-  border-color: #0062cc;
-  color: #fff; }
+button:hover,
+.button:hover {
+  background-color: gainsboro; }
 
 input[type=submit]:not(:disabled):active,
 input[type=reset]:not(:disabled):active,
 input[type=button]:not(:disabled):active,
-button:not(:disabled):active {
-  background-color: #0062cc;
-  border-color: #005cbf;
-  color: #fff; }
+button:not(:disabled):active,
+.button:active {
+  background-color: #d6d6d6; }
 
 input[type=submit]:focus,
 input[type=reset]:focus,
 input[type=button]:focus,
-button:focus {
+button:focus,
+.button:focus {
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+  box-shadow: 0 0 0 0.2rem rgba(239, 239, 239, 0.5); }
 
 input[type=submit]:disabled,
 input[type=reset]:disabled,
 input[type=button]:disabled,
-button:disabled {
-  opacity: .65;
+button:disabled,
+.button.disabled {
+  opacity: 0.65;
   cursor: not-allowed;
-  background-color: #007bff;
-  border-color: #007bff;
-  color: #fff; }
+  background-color: #efefef; }
 
-table {
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+dl {
   margin-bottom: 16px; }
+
+dd {
+  margin-left: 40px; }
+
+ul,
+ol {
+  margin-bottom: 8px;
+  padding-left: 40px;
+  vertical-align: baseline; }
 
 caption {
   padding: 8px 0; }
 
-thead th {
-  border: 0;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
-  text-align: left; }
-
-tr {
-  margin-bottom: 8px; }
+table {
+  margin-bottom: 16px; }
 
 th,
 td {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  text-align: left;
   padding: 16px;
-  vertical-align: inherit; }
-
-tfoot tr {
-  text-align: left; }
-
-tfoot td {
-  color: rgba(0, 0, 0, 0.54);
-  font-size: 8px;
-  font-style: italic;
-  padding: 16px 4px; }
+  vertical-align: inherit;
+  border: 0; }
 
 header#top {
   display: flex;

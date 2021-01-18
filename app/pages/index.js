@@ -51,7 +51,7 @@ module.exports = async function($) {
               <li><a href="#forms-radio">Radio buttons</a></li>
               <li><a href="#forms-textareas">Textareas</a></li>
               <li><a href="#forms-html5">HTML5 inputs</a></li>
-              <li><a href="#forms-action">Action buttons</a></li>
+              <li><a href="#forms-buttons">Buttons</a></li>
             </ul>
           </li>
         </ul>
@@ -382,7 +382,7 @@ module.exports = async function($) {
             </p>
           </fieldset>
           <p><a href="#top">[Top]</a></p>
-          <fieldset>
+          <fieldset id="#forms-buttons">
             <legend>Buttons</legend>
             <p>
               <input type="submit" value="<input type=submit>">

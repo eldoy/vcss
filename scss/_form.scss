@@ -29,7 +29,7 @@ trix-editor,
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
   font-family: $sans-serif;
   word-break: normal;
-  &:not([readonly]):focus {
+  &:focus {
     background-color: $input-focus-background-color;
     border-color: $input-focus-border-color;
     outline: $input-focus-outline;

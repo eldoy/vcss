@@ -550,13 +550,13 @@ code {
 }
 
 a:not(.button) {
-  color: #33f;
+  color: #44f;
   text-decoration: none;
   background-color: transparent;
 }
 a:not(.button):hover,
 a:not(.button):focus {
-  color: #0000e6;
+  color: #1111ff;
   text-decoration: underline;
 }
 
@@ -628,28 +628,28 @@ trix-editor,
     "Segoe UI Symbol";
   word-break: normal;
 }
-input:not([type]):not([readonly]):focus,
-input[type="text"]:not([readonly]):focus,
-input[type="password"]:not([readonly]):focus,
-input[type="email"]:not([readonly]):focus,
-input[type="url"]:not([readonly]):focus,
-input[type="date"]:not([readonly]):focus,
-input[type="month"]:not([readonly]):focus,
-input[type="time"]:not([readonly]):focus,
-input[type="datetime"]:not([readonly]):focus,
-input[type="datetime-local"]:not([readonly]):focus,
-input[type="week"]:not([readonly]):focus,
-input[type="number"]:not([readonly]):focus,
-input[type="search"]:not([readonly]):focus,
-input[type="tel"]:not([readonly]):focus,
-select:not([readonly]):focus,
-textarea:not([readonly]):focus,
-trix-editor:not([readonly]):focus,
-#card-element:not([readonly]):focus {
+input:not([type]):focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus,
+trix-editor:focus,
+#card-element:focus {
   background-color: #fff;
-  border-color: #adadad;
+  border-color: #a2a2ff;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(90, 90, 90, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(68, 68, 255, 0.25);
 }
 input:not([type])[disabled],
 input[type="text"][disabled],

@@ -31,12 +31,12 @@ Here's the list of available variables at the moment (as found in `scss/_variabl
 
 ```scss
 // Colors
+$primary: #44f !default;
 $text: #111 !default;
 $white: #fff !default;
 $black: #000 !default;
 $light: #dfdfdf !default;
 $dark: #5a5a5a !default;
-$link: #33f !default;
 $highlight: #ff5 !default;
 $danger: #f55 !default;
 $line: #eaeaea !default;
@@ -61,8 +61,8 @@ $small-breakpoint: 400px !default;
 $large-breakpoint: 960px !default;
 
 // Links
-$link-color: $link !default;
-$link-hover-color: darken($link-color, 15%) !default;
+$link-color: $primary !default;
+$link-hover-color: darken($link-color, 10%) !default;
 
 // Buttons
 $button-background-color: $button !default;
@@ -84,9 +84,9 @@ $label-font-size: 90% !default;
 $label-line-height: 2 !default;
 $input-border: 1px solid $input;
 $input-focus-background-color: #fff !default;
-$input-focus-border-color: mix($dark, #fff) !default;
+$input-focus-border-color: mix($primary, #fff) !default;
 $input-focus-outline: 0 !default;
-$input-focus-shadow: 0 0 0 0.2rem fade_out($dark, 0.75) !default;
+$input-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.75) !default;
 $input-outline: 1px thin $line !default;
 $input-disabled-background-color: $disabled !default;
 $input-readonly-background-color: $disabled !default;
