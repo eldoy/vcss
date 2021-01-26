@@ -691,7 +691,8 @@ button,
   font-size: 1rem;
   line-height: 1.5;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 input[type=submit]::-moz-focus-inner,
 input[type=reset]::-moz-focus-inner,
