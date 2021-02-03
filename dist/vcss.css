@@ -614,7 +614,7 @@ trix-editor,
 #card-element {
   background: #fff;
   background-clip: padding-box;
-  border: 1px solid #333;
+  border: 1px solid #ccc;
   border-radius: 4px;
   color: #111;
   display: block;
@@ -762,6 +762,12 @@ input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
   display: inline;
+}
+
+em {
+  display: block;
+  color: #f55;
+  font-style: normal;
 }
 
 input[type="submit"],
