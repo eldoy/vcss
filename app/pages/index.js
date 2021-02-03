@@ -267,6 +267,7 @@ module.exports = async function($) {
             <p>
               <label for="input-text">Text Input</label>
               <input id="input-text" type="text" placeholder="Text Input">
+              <em>Error message</em>
             </p>
             <p>
               <label for="input-password">Password</label>

@@ -43,7 +43,6 @@ $line: #eaeaea !default;
 $disabled: #fafafa !default;
 $medium: #ccc !default;
 $preserve: #fafafa !default;
-$input: #333 !default;
 $button: #efefef !default;
 $small: #999 !default;
 
@@ -82,7 +81,7 @@ $button-disabled-background-color: $button !default;
 $label-color: $dark !default;
 $label-font-size: 90% !default;
 $label-line-height: 2 !default;
-$input-border: 1px solid $input;
+$input-border: 1px solid $medium;
 $input-focus-background-color: #fff !default;
 $input-focus-border-color: mix($primary, #fff) !default;
 $input-focus-outline: 0 !default;

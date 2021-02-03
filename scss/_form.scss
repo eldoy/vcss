@@ -114,3 +114,9 @@ input[type="radio"] {
   padding: 0;
   display: inline;
 }
+
+em {
+  display: block;
+  color: $danger;
+  font-style: normal;
+}
