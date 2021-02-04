@@ -537,7 +537,7 @@ input[type="tel"],
 select,
 textarea,
 trix-editor,
-#card-element {
+.StripeElement {
   background: #fff;
   background-clip: padding-box;
   border: 1px solid #ccc;
@@ -568,7 +568,7 @@ trix-editor,
   select:focus,
   textarea:focus,
   trix-editor:focus,
-  #card-element:focus {
+  .StripeElement:focus {
     background-color: #fff;
     border-color: #a2a2ff;
     outline: 0;
@@ -590,7 +590,7 @@ trix-editor,
   select[disabled],
   textarea[disabled],
   trix-editor[disabled],
-  #card-element[disabled] {
+  .StripeElement[disabled] {
     background-color: #fafafa;
     cursor: not-allowed;
     opacity: 1; }
@@ -611,8 +611,14 @@ trix-editor,
   select[readonly],
   textarea[readonly],
   trix-editor[readonly],
-  #card-element[readonly] {
+  .StripeElement[readonly] {
     background-color: #fafafa; }
+
+.StripeElement--focus {
+  background-color: #fff;
+  border-color: #a2a2ff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(68, 68, 255, 0.25); }
 
 input[type="color"] {
   background: #fff;

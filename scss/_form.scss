@@ -1,3 +1,10 @@
+@mixin focus {
+  background-color: $input-focus-background-color;
+  border-color: $input-focus-border-color;
+  outline: $input-focus-outline;
+  box-shadow: $input-focus-shadow;
+}
+
 input:not([type]),
 input[type="text"],
 input[type="password"],
@@ -15,7 +22,7 @@ input[type="tel"],
 select,
 textarea,
 trix-editor,
-#card-element {
+.StripeElement {
   background: $white;
   background-clip: padding-box;
   border: $input-border;
@@ -30,10 +37,7 @@ trix-editor,
   font-family: $sans-serif;
   word-break: normal;
   &:focus {
-    background-color: $input-focus-background-color;
-    border-color: $input-focus-border-color;
-    outline: $input-focus-outline;
-    box-shadow: $input-focus-shadow;
+    @include focus;
   }
   &[disabled] {
     background-color: $input-disabled-background-color;
@@ -43,6 +47,10 @@ trix-editor,
   &[readonly] {
     background-color: $input-readonly-background-color;
   }
+}
+
+.StripeElement--focus {
+  @include focus;
 }
 
 input[type="color"] {
