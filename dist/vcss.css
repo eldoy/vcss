@@ -764,7 +764,7 @@ input[type="radio"] {
   display: inline;
 }
 
-em {
+form em {
   display: block;
   color: #f55;
   font-style: normal;

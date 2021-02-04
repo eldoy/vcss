@@ -185,6 +185,7 @@ module.exports = async function($) {
           <div>
             <p><a href="#!">This is a text link</a>.</p>
             <p><strong>Strong is used to indicate strong importance.</strong></p>
+            <p><em>This text has added emphasis.</em></p>
             <p>The <b>b element</b> is stylistically different text from normal text, without any special importance.</p>
             <p>The <i>i element</i> is text that is offset from the normal text.</p>
             <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation.</p>

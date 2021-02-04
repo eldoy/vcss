@@ -672,7 +672,7 @@ input[type="radio"] {
   padding: 0;
   display: inline; }
 
-em {
+form em {
   display: block;
   color: #f55;
   font-style: normal; }
