@@ -590,7 +590,7 @@ sub {
 }
 
 mark {
-  background: #ff5;
+  background: #ffa;
 }
 
 input:not([type]),

@@ -37,7 +37,7 @@ $white: #fff !default;
 $black: #000 !default;
 $light: #dfdfdf !default;
 $dark: #5a5a5a !default;
-$highlight: #ff5 !default;
+$highlight: #ffa !default;
 $danger: #f55 !default;
 $line: #eaeaea !default;
 $disabled: #fafafa !default;

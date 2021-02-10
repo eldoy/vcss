@@ -517,7 +517,7 @@ sub {
   vertical-align: sub; }
 
 mark {
-  background: #ff5; }
+  background: #ffa; }
 
 input:not([type]),
 input[type="text"],
