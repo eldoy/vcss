@@ -7,7 +7,8 @@ Inspired by [marx](https://mblode.github.io/marx/) and [sanitize](https://csstoo
 * Different defaults, more light weight
 * More SCSS variables and colors
 * Extra tag styles and utilities
-* Lots of tweaks and some bug fixes
+* Lots of tweaks and bug fixes
+* Mobile first
 
 [Check out the demo](https://eldoy.github.io/vcss/)
 
@@ -49,15 +50,20 @@ $small: #999 !default;
 // Basic stylings
 $border: 1px solid $line !default;
 $border-radius: 4px !default;
+
+// Padding
 $xs-pad: 4px !default;
 $sm-pad: 8px !default;
 $md-pad: 16px !default;
 $lg-pad: 20px !default;
-$xlg-pad: 40px !default;
+$xl-pad: 40px !default;
 
 // Breakpoints
-$small-breakpoint: 400px !default;
-$large-breakpoint: 960px !default;
+$xl-breakpoint: 1140px !default;
+$lg-breakpoint: 960px !default;
+$md-breakpoint: 600px !default;
+$sm-breakpoint: 400px !default;
+$xs-breakpoint: 360px !default;
 
 // Links
 $link-color: $primary !default;
@@ -74,7 +80,7 @@ $button-transition: color .15s ease-in-out, background-color .15s ease-in-out, b
 $button-hover-background-color: darken($button, 7.5%) !default;
 $button-active-background-color: darken($button, 10%) !default;
 $button-focus-outline: 0 !default;
-$button-focus-shadow: 0 0 0 0.2rem fade_out($button, 0.5) !default;
+$button-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.75) !default;
 $button-disabled-background-color: $button !default;
 
 // Forms
@@ -89,7 +95,7 @@ $input-focus-shadow: 0 0 0 0.2rem fade_out($primary, 0.75) !default;
 $input-outline: 1px thin $line !default;
 $input-disabled-background-color: $disabled !default;
 $input-readonly-background-color: $disabled !default;
-$input-invalid-border-color: darken($danger, 10) !default;
+$input-invalid-border-color: darken($danger, 10%) !default;
 $input-invalid-color: $danger !default;
 $input-focus-invalid-outline-color: $danger !default;
 
