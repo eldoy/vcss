@@ -424,7 +424,7 @@ summary {
 
 main {
   display: block;
-  max-width: 960px;
+  max-width: 600px;
   padding: 0 16px 16px;
 }
 
@@ -440,8 +440,7 @@ hr {
   border: 0;
   border-top: 1px solid #eaeaea;
   display: block;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin: 16px 0;
   width: 100%;
   box-sizing: content-box;
   height: 0;
@@ -454,6 +453,12 @@ img {
   vertical-align: baseline;
 }
 
+embed,
+iframe,
+video {
+  border: 0;
+}
+
 @media screen and (max-width: 400px) {
   article,
   section,
@@ -462,12 +467,6 @@ img {
     display: block;
     max-width: 100%;
   }
-}
-
-embed,
-iframe,
-video {
-  border: 0;
 }
 
 body {

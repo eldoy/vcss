@@ -1,3 +1,6 @@
+main {
+  max-width: 960px;
+}
 header#top {
   display: flex;
   align-items: baseline;
