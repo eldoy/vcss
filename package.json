@@ -1,6 +1,6 @@
 {
   "name": "vcss.css",
-  "version": "0.2.16",
+  "version": "0.3.0",
   "description": "Minimal and semantic CSS library",
   "main": "dist/vcss.scss",
   "style": "dist/vcss.scss",
