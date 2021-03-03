@@ -831,6 +831,9 @@ form em {
   font-style: normal;
 }
 
+form fieldset {
+  margin: 0 0 $md-pad;
+}
 input[type=submit],
 input[type=reset],
 input[type=button],

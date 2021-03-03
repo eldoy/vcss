@@ -770,6 +770,10 @@ form em {
   font-style: normal;
 }
 
+form fieldset {
+  margin: 0 0 16px;
+}
+
 input[type=submit],
 input[type=reset],
 input[type=button],

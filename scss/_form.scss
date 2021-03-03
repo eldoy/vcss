@@ -128,3 +128,7 @@ form em {
   color: $danger;
   font-style: normal;
 }
+
+form fieldset {
+  margin: 0 0 $md-pad;
+}
