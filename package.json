@@ -38,6 +38,6 @@
   },
   "dependencies": {
     "sass": "^1.32.8",
-    "waveorb": "^0.13.12"
+    "waveorb": "^0.13.32"
   }
 }
