@@ -1,5 +1,3 @@
-const tomarkup = require('tomarkup')()
-
 module.exports = async function($) {
   $.page.title = 'VCSS Semantic and minimal CSS library'
 
