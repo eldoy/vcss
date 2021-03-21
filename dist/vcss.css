@@ -421,6 +421,7 @@ summary {
   margin: 0 auto;
   margin-bottom: 16px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 main {
