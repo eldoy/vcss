@@ -548,13 +548,13 @@ code {
   word-wrap: break-word;
 }
 
-a:not(.button) {
+a {
   color: #44f;
   text-decoration: none;
   background-color: transparent;
 }
-a:not(.button):hover,
-a:not(.button):focus {
+a:hover,
+a:focus {
   color: #1111ff;
   text-decoration: underline;
 }
@@ -784,7 +784,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
-.button {
+a.button {
   background-color: #efefef;
   border-radius: 4px;
   color: #111;

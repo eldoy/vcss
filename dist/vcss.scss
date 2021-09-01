@@ -656,7 +656,7 @@ code {
   word-wrap: break-word;
 }
 
-a:not(.button) {
+a {
   color: $link-color;
   text-decoration: none;
   background-color: transparent;
@@ -839,7 +839,7 @@ input[type=submit],
 input[type=reset],
 input[type=button],
 button,
-.button {
+a.button {
   background-color: $button-background-color;
   border-radius: $button-border-radius;
   color: $button-color;
