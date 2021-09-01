@@ -74,7 +74,7 @@ code {
   word-wrap: break-word;
 }
 
-a:not(.button) {
+a {
   color: $link-color;
   text-decoration: none;
   background-color: transparent;
