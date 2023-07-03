@@ -16,10 +16,8 @@
  */
 ::before,
 ::after {
-  text-decoration: inherit;
-  /* 1 */
-  vertical-align: inherit;
-  /* 2 */
+  text-decoration: inherit; /* 1 */
+  vertical-align: inherit; /* 2 */
 }
 
 /**
@@ -31,19 +29,13 @@
  * 6. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  cursor: default;
-  /* 1 */
-  line-height: 1.5;
-  /* 2 */
-  overflow-wrap: anywhere;
-  /* 3 */
-  -moz-tab-size: 4;
-  /* 4 */
-  tab-size: 4;
-  /* 4 */
+  cursor: default; /* 1 */
+  line-height: 1.5; /* 2 */
+  overflow-wrap: anywhere; /* 3 */
+  -moz-tab-size: 4; /* 4 */
+  tab-size: 4; /* 4 */
   -webkit-tap-highlight-color: transparent;
-  -webkit-text-size-adjust: 100%;
-  /* 6 */
+  -webkit-text-size-adjust: 100%; /* 6 */
 }
 
 /* Sections
@@ -82,10 +74,8 @@ ul dl {
  * 2. Add the correct box sizing in Firefox.
  */
 hr {
-  color: inherit;
-  /* 1 */
-  height: 0;
-  /* 2 */
+  color: inherit; /* 1 */
+  height: 0; /* 2 */
 }
 
 /**
@@ -110,12 +100,9 @@ nav li::before {
  * 3. Prevent overflow of the container in all browsers (opinionated).
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
-  overflow: auto;
-  /* 3 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+  overflow: auto; /* 3 */
 }
 
 /* Text-level semantics
@@ -143,10 +130,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -200,12 +185,9 @@ svg:not([fill]) {
  * 3. Remove text indentation from table contents in Chrome, Edge, and Safari.
  */
 table {
-  border-collapse: collapse;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
-  text-indent: 0;
-  /* 3 */
+  border-collapse: collapse; /* 1 */
+  border-color: inherit; /* 2 */
+  text-indent: 0; /* 3 */
 }
 
 /* Forms
@@ -241,10 +223,8 @@ button,
  * 2. Correct the padding in Firefox.
  */
 fieldset {
-  border: 1px solid #a0a0a0;
-  /* 1 */
-  padding: 0.35em 0.75em 0.625em;
-  /* 2 */
+  border: 1px solid #a0a0a0; /* 1 */
+  padding: 0.35em 0.75em 0.625em; /* 2 */
 }
 
 /**
@@ -266,10 +246,8 @@ select {
  * 3. Change the resize direction in all browsers (opinionated).
  */
 textarea {
-  margin: 0;
-  /* 1 */
-  resize: vertical;
-  /* 3 */
+  margin: 0; /* 1 */
+  resize: vertical; /* 3 */
 }
 
 /**
@@ -277,10 +255,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type="search" i] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -311,10 +287,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /**
@@ -747,7 +721,8 @@ label {
 legend {
   padding: 0;
   display: table;
-  font-size: 16px;
+  font-size: 90%;
+  color: #5a5a5a;
   margin-bottom: 8px;
 }
 
