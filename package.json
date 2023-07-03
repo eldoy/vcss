@@ -33,11 +33,11 @@
   },
   "homepage": "https://github.com/eldoy/vcss#readme",
   "devDependencies": {
-    "concurrently": "^6.2.1",
-    "prettier": "^2.3.2"
+    "concurrently": "^8.2.0",
+    "prettier": "^2.8.8"
   },
   "dependencies": {
-    "sass": "^1.38.2",
-    "waveorb": "^0.15.4"
+    "sass": "^1.63.6",
+    "waveorb": "^0.37.3"
   }
 }

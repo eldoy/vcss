@@ -100,7 +100,8 @@ label {
 legend {
   padding: 0;
   display: table;
-  font-size: $font-size;
+  font-size: $label-font-size;
+  color: $label-color;
   margin-bottom: $sm-pad;
 }
 
